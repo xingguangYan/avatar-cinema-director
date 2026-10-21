@@ -1,0 +1,52 @@
+{
+  "route": "two",
+  "title": "Morning at the Tavern",
+  "characters": [
+    {
+      "id": "eddie",
+      "display_name": "Eddie",
+      "photo": "inputs/eddie.png",
+      "voice": "am_michael",
+      "lang_code": "a",
+      "speed": 0.98
+    },
+    {
+      "id": "starlight",
+      "display_name": "Starlight",
+      "photo": "inputs/starlight.png",
+      "voice": "af_heart",
+      "lang_code": "a",
+      "speed": 0.95
+    }
+  ],
+  "backgrounds": {
+    "16x9": "inputs/background-16x9.jpg",
+    "9x16": "inputs/background-9x16.jpg"
+  },
+  "dialogue": [
+    {
+      "speaker": "Eddie",
+      "text": "Morning, Starlight. Did you sleep well?"
+    },
+    {
+      "speaker": "Starlight",
+      "text": "Not really. I stayed up late finishing a report."
+    }
+  ],
+  "outputs": [
+    "16x9",
+    "9x16"
+  ],
+  "options": {
+    "bgm": "",
+    "caption_font": "Arial",
+    "device": "cpu",
+    "wav2lip_batch_size": 96,
+    "face_pads": [
+      0,
+      24,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Talking Dialogue Video"
+  short_description: "Single- and two-person talking video production"
+  default_prompt: "Use $talking-dialogue-video to create a talking video from my photos, background, and dialogue."

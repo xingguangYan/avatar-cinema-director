@@ -1,0 +1,39 @@
+{
+  "route": "single",
+  "title": "Morning Update",
+  "characters": [
+    {
+      "id": "host",
+      "display_name": "Host",
+      "photo": "inputs/host.png",
+      "voice": "am_michael",
+      "lang_code": "a",
+      "speed": 0.98
+    }
+  ],
+  "backgrounds": {
+    "default": "inputs/background.jpg"
+  },
+  "dialogue": [
+    {
+      "speaker": "Host",
+      "text": "Hello and welcome. Here is today's update."
+    }
+  ],
+  "outputs": [
+    "16x9",
+    "9x16"
+  ],
+  "options": {
+    "bgm": "",
+    "caption_font": "Arial",
+    "device": "cpu",
+    "wav2lip_batch_size": 96,
+    "face_pads": [
+      0,
+      24,
+      0,
+      0
+    ]
+  }
+}
