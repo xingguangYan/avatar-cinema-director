@@ -30,11 +30,13 @@
   "dialogue": [
     {
       "speaker": "Host",
-      "text": "你好，欢迎来到今天的节目。"
+      "text": "你好，欢迎来到今天的节目。",
+      "translation": "Hello, welcome to today's program."
     },
     {
       "speaker": "Guest",
-      "text": "Hello, thank you for having me."
+      "text": "Hello, thank you for having me.",
+      "translation": "你好，谢谢你邀请我。"
     }
   ],
   "outputs": [
@@ -45,6 +47,7 @@
     "caption_font": "Arial",
     "caption_font_size_16x9": 44,
     "caption_font_size_9x16": 48,
+    "caption_translation_scale": 0.78,
     "caption_margin_v_16x9": 72,
     "caption_margin_v_9x16": 184,
     "voice_volume": 1.06,

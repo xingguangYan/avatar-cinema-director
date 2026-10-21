@@ -28,11 +28,13 @@
   "dialogue": [
     {
       "speaker": "Eddie",
-      "text": "Morning, Starlight. Did you sleep well?"
+      "text": "Morning, Starlight. Did you sleep well?",
+      "translation": "早上好，Starlight。你睡得好吗？"
     },
     {
       "speaker": "Starlight",
-      "text": "Not really. I stayed up late finishing a report."
+      "text": "Not really. I stayed up late finishing a report.",
+      "translation": "不太好。我熬夜完成了报告。"
     }
   ],
   "outputs": [
@@ -44,6 +46,7 @@
     "caption_font": "Arial",
     "caption_font_size_16x9": 42,
     "caption_font_size_9x16": 46,
+    "caption_translation_scale": 0.78,
     "caption_margin_v_16x9": 70,
     "caption_margin_v_9x16": 180,
     "voice_volume": 1.06,

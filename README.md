@@ -15,6 +15,7 @@ It supports:
 - Transparent character panels with refined alpha edges.
 - Contact shadows and subtle color matching.
 - Speaker-colored captions.
+- Optional bilingual captions with separate translation text.
 - Selectable caption font size, margin, and wrapping.
 - Selectable dialogue and background-music volume.
 - CPU, automatic CUDA, or specific-GPU execution.
@@ -1355,6 +1356,13 @@ The pipeline does not verify identity or consent.
 ---
 
 ## Release Notes
+
+### 0.3.1
+
+- Added dialogue `translation` support for bilingual subtitles.
+- Added CJK-aware caption wrapping by character count and punctuation.
+- Added `caption_translation_scale`.
+- Kept spoken audio and translated subtitle text independent.
 
 ### 0.3.0
 

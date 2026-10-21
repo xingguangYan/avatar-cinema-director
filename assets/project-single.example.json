@@ -18,7 +18,8 @@
   "dialogue": [
     {
       "speaker": "Host",
-      "text": "Hello and welcome. Here is today's update."
+      "text": "Hello and welcome. Here is today's update.",
+      "translation": ""
     }
   ],
   "outputs": [
@@ -30,6 +31,7 @@
     "caption_font": "Arial",
     "caption_font_size_16x9": 42,
     "caption_font_size_9x16": 46,
+    "caption_translation_scale": 0.78,
     "caption_margin_v_16x9": 70,
     "caption_margin_v_9x16": 180,
     "voice_volume": 1.06,

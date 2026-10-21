@@ -191,6 +191,7 @@ def main() -> None:
                 "speaker_id": character["id"],
                 "speaker": character["display_name"],
                 "text": item["text"],
+                "translation": item.get("translation", ""),
                 "start": round(start, 4),
                 "end": round(end, 4),
                 "duration": round(duration, 4),

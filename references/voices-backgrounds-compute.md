@@ -169,6 +169,19 @@ Set exact pixel sizes per aspect:
 }
 ```
 
+Add bilingual subtitles without changing what is spoken:
+
+```json
+{
+  "speaker": "Host",
+  "text": "你好，欢迎来到今天的节目。",
+  "translation": "Hello and welcome to today's program."
+}
+```
+
+`caption_translation_scale` controls the secondary caption size. The default is
+`0.78`.
+
 Safe ranges:
 
 - Font size: `16` to `120`.

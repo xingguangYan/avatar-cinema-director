@@ -26,7 +26,8 @@ the directory containing the manifest.
   "dialogue": [
     {
       "speaker": "Host",
-      "text": "Hello and welcome."
+      "text": "你好，欢迎来到今天的节目。",
+      "translation": "Hello and welcome to today's program."
     }
   ],
   "outputs": ["16x9", "9x16"],
@@ -59,6 +60,9 @@ left/right or top/bottom placement.
 `default` image that will be cropped for every requested aspect.
 
 `speaker` must match either a character `id` or `display_name`.
+
+`translation` is optional. When present, it is displayed as a smaller second
+line under the spoken caption. It is not synthesized into audio.
 
 `engine` is `kokoro` or `edge`. For Kokoro, `voice` can be an absolute `.pt`
 path, a project-relative path, or a bundled voice filename without `.pt`. For

@@ -260,7 +260,18 @@ def load_project(project_arg: str) -> dict[str, Any]:
         text = re.sub(r"\s+", " ", str(item.get("text", ""))).strip()
         if not text:
             raise RuntimeError(f"dialogue[{index}] is empty")
-        dialogue.append({"speaker_id": speakers[speaker_key], "text": text})
+        translation = re.sub(
+            r"\s+",
+            " ",
+            str(item.get("translation", item.get("subtitle", ""))),
+        ).strip()
+        dialogue.append(
+            {
+                "speaker_id": speakers[speaker_key],
+                "text": text,
+                "translation": translation,
+            }
+        )
 
     outputs = [str(item) for item in raw.get("outputs", ["16x9", "9x16"])]
     options = dict(raw.get("options", {}))
@@ -390,6 +401,11 @@ def validate_project(project: dict[str, Any]) -> None:
         raise RuntimeError("voice_volume must be between 0.0 and 3.0")
     if not 0.0 <= bgm_volume <= 1.0:
         raise RuntimeError("bgm_volume must be between 0.0 and 1.0")
+    translation_scale = float(
+        project["options"].get("caption_translation_scale", 0.78)
+    )
+    if not 0.5 <= translation_scale <= 1.2:
+        raise RuntimeError("caption_translation_scale must be between 0.5 and 1.2")
 
     for aspect in project["outputs"]:
         font_size = int(
@@ -440,7 +456,11 @@ def build_audio(project: dict[str, Any]) -> None:
             for item in project["characters"]
         ],
         "dialogue": [
-            {"speaker_id": item["speaker_id"], "text": item["text"]}
+            {
+                "speaker_id": item["speaker_id"],
+                "text": item["text"],
+                "translation": item["translation"],
+            }
             for item in project["dialogue"]
         ],
         "options": project["options"],
@@ -695,6 +715,32 @@ def ass_time(seconds: float) -> str:
 
 
 def wrap_caption(text: str, limit: int) -> str:
+    cjk_count = len(re.findall(r"[\u4e00-\u9fff]", text))
+    if cjk_count >= 4:
+        max_chars = max(10, int(limit * 0.5))
+        punctuation = set("，。！？；：、,.!?;:—")
+        lines = []
+        current = ""
+        for char in text:
+            current += char
+            if len(current) >= max_chars and char in punctuation:
+                lines.append(current.strip())
+                current = ""
+            elif len(current) >= max_chars + 4:
+                split_at = max(
+                    (index + 1 for index, item in enumerate(current[:-1]) if item in punctuation),
+                    default=-1,
+                )
+                if split_at > 0:
+                    lines.append(current[:split_at].strip())
+                    current = current[split_at:]
+                else:
+                    lines.append(current.strip())
+                    current = ""
+        if current.strip():
+            lines.append(current.strip())
+        return r"\N".join(line for line in lines if line)
+
     words = text.split()
     lines = []
     current = ""
@@ -751,6 +797,10 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     character_index = {
         character["id"]: index for index, character in enumerate(project["characters"])
     }
+    translation_scale = float(
+        project["options"].get("caption_translation_scale", 0.78)
+    )
+    translation_size = max(18, int(round(font_size * translation_scale)))
     for event in timeline["events"]:
         color = SPEAKER_COLORS[character_index[event["speaker_id"]] % len(SPEAKER_COLORS)]
         text = (
@@ -759,10 +809,23 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             .replace("{", r"\{")
             .replace("}", r"\}")
         )
+        translation = event.get("translation", "")
+        secondary = ""
+        if translation:
+            translated_text = (
+                wrap_caption(translation, max(24, int(wrap_limit * 1.08)))
+                .replace("\\", r"\\")
+                .replace("{", r"\{")
+                .replace("}", r"\}")
+            )
+            secondary = (
+                rf"\N{{\fs{translation_size}\c&HEAE2D9&}}"
+                f"{translated_text}"
+            )
         lines.append(
             f"Dialogue: 0,{ass_time(event['start'])},{ass_time(event['end'])},"
             f"Caption,,0,0,0,,{{\\fad(130,130)}}{{\\c&H{color}&}}"
-            f"{event['speaker'].upper()}{{\\c&HFFFFFF&}} {text}\n"
+            f"{event['speaker'].upper()}{{\\c&HFFFFFF&}} {text}{secondary}\n"
         )
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text("".join(lines), encoding="utf-8-sig")
