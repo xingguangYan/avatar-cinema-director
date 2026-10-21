@@ -7,6 +7,7 @@
       "display_name": "Eddie",
       "photo": "inputs/eddie.png",
       "engine": "kokoro",
+      "gender": "male",
       "voice": "am_michael",
       "lang_code": "a",
       "speed": 0.98
@@ -16,6 +17,7 @@
       "display_name": "Starlight",
       "photo": "inputs/starlight.png",
       "engine": "kokoro",
+      "gender": "female",
       "voice": "af_heart",
       "lang_code": "a",
       "speed": 0.95

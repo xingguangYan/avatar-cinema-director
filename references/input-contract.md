@@ -15,6 +15,7 @@ the directory containing the manifest.
       "display_name": "Host",
       "photo": "inputs/host.png",
       "engine": "kokoro",
+      "gender": "male",
       "voice": "am_michael",
       "lang_code": "a",
       "speed": 0.98
@@ -69,6 +70,10 @@ path, a project-relative path, or a bundled voice filename without `.pt`. For
 Edge, `voice` is the short name from `assets/voices/catalog.json`, such as
 `zh-CN-XiaoxiaoNeural`.
 
+`gender` is optional but recommended. Accepted values include `female`, `male`,
+`f`, `m`, `woman`, `man`, `girl`, and `boy`. The validator compares this field
+against the selected Kokoro or Edge voice and refuses a mismatch.
+
 ## Required User Photos
 
 Character photo:
@@ -111,6 +116,8 @@ the result.
 - `options.caption_margin_v_16x9` and `_9x16`: bottom caption margins.
 - `options.voice_volume`: final dialogue gain after loudness normalization.
 - `options.bgm_volume`: music gain relative to the dialogue track.
+- `options.character_color_adjustments`: per-character `contrast`, `saturation`,
+  and `brightness` overrides.
 
 ## Validation
 

@@ -3,7 +3,7 @@ name: avatar-cinema-director
 description: Direct cinematic single- or two-person talking videos from user-supplied character photos, background photos, and dialogue, using a multilingual offline/online voice library, bilingual captions, background-first compositing, selectable caption and audio levels, CPU/GPU controls, and optional 16:9 and 9:16 renders.
 metadata:
   short-description: Cinematic single- and two-person talking video direction
-  version: 0.3.2
+  version: 0.3.3
 ---
 
 # Avatar Cinema Director

@@ -229,6 +229,7 @@ def load_project(project_arg: str) -> dict[str, Any]:
                 "photo": resolve_path(project_dir, str(item.get("photo", ""))),
                 "engine": engine,
                 "voice": voice_path,
+                "gender": str(item.get("gender", "")).strip().lower(),
                 "lang_code": str(item.get("lang_code", "a")),
                 "speed": float(item.get("speed", 1.0)),
                 "rate": str(item.get("rate", "+0%")),
@@ -289,6 +290,35 @@ def load_project(project_arg: str) -> dict[str, Any]:
     }
 
 
+def normalize_gender(value: str) -> str:
+    normalized = str(value).strip().lower()
+    if normalized in {"f", "female", "woman", "girl"}:
+        return "female"
+    if normalized in {"m", "male", "man", "boy"}:
+        return "male"
+    return ""
+
+
+def infer_voice_gender(character: dict[str, Any]) -> str:
+    if character["engine"] == "kokoro":
+        stem = Path(character["voice"]).stem
+        if len(stem) >= 2 and stem[1] in {"f", "m"}:
+            return "female" if stem[1] == "f" else "male"
+        return ""
+
+    catalog_path = (
+        Path(__file__).resolve().parents[1] / "assets" / "voices" / "catalog.json"
+    )
+    if not catalog_path.exists():
+        return ""
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    voice_id = str(character["voice"]).casefold()
+    for item in catalog.get("edge", []):
+        if str(item.get("id", "")).casefold() == voice_id:
+            return normalize_gender(item.get("gender", ""))
+    return ""
+
+
 def validate_project(project: dict[str, Any]) -> None:
     route = project["route"]
     characters = project["characters"]
@@ -329,6 +359,13 @@ def validate_project(project: dict[str, Any]) -> None:
                 raise RuntimeError(f"Missing Kokoro voice: {character['voice']}")
         elif not str(character["voice"]).strip():
             raise RuntimeError(f"Missing Edge voice id: {character['display_name']}")
+        declared_gender = normalize_gender(character.get("gender", ""))
+        inferred_gender = infer_voice_gender(character)
+        if declared_gender and inferred_gender and declared_gender != inferred_gender:
+            raise RuntimeError(
+                f"Voice gender mismatch for {character['display_name']}: "
+                f"declared {declared_gender}, inferred {inferred_gender}"
+            )
         image = read_image(character["photo"])
         min_side = min(image.shape[:2])
         if min_side < 512:
@@ -406,6 +443,29 @@ def validate_project(project: dict[str, Any]) -> None:
     )
     if not 0.5 <= translation_scale <= 1.2:
         raise RuntimeError("caption_translation_scale must be between 0.5 and 1.2")
+
+    color_adjustments = project["options"].get("character_color_adjustments", {})
+    if not isinstance(color_adjustments, dict):
+        raise RuntimeError("character_color_adjustments must be an object")
+    character_ids = {item["id"] for item in characters}
+    for character_id, adjustment in color_adjustments.items():
+        if character_id not in character_ids:
+            raise RuntimeError(
+                f"character_color_adjustments has unknown id: {character_id}"
+            )
+        if not isinstance(adjustment, dict):
+            raise RuntimeError(
+                f"character_color_adjustments.{character_id} must be an object"
+            )
+        brightness = float(adjustment.get("brightness", -0.006))
+        contrast = float(adjustment.get("contrast", 1.012))
+        saturation = float(adjustment.get("saturation", 0.98))
+        if not -0.3 <= brightness <= 0.3:
+            raise RuntimeError("character brightness must be between -0.3 and 0.3")
+        if not 0.5 <= contrast <= 2.0:
+            raise RuntimeError("character contrast must be between 0.5 and 2.0")
+        if not 0.0 <= saturation <= 2.0:
+            raise RuntimeError("character saturation must be between 0.0 and 2.0")
 
     for aspect in project["outputs"]:
         font_size = int(

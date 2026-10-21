@@ -7,6 +7,7 @@
       "display_name": "Host",
       "photo": "inputs/host.png",
       "engine": "kokoro",
+      "gender": "male",
       "voice": "am_michael",
       "lang_code": "a",
       "speed": 0.98

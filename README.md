@@ -824,6 +824,7 @@ Character fields:
 | `display_name` | yes | Name shown in captions |
 | `photo` | yes | Character photo path |
 | `engine` | no | `kokoro` (default) or `edge` |
+| `gender` | recommended | Used to validate female/male voice casting |
 | `voice` | yes | Kokoro voice name/path or Edge short name |
 | `lang_code` | no | Kokoro language code, default `a` |
 | `speed` | no | Voice speed multiplier |
@@ -1356,6 +1357,13 @@ The pipeline does not verify identity or consent.
 ---
 
 ## Release Notes
+
+### 0.3.3
+
+- Added optional character `gender` declarations.
+- Added automatic Kokoro/Edge voice-gender validation.
+- Added range validation for per-character brightness, contrast, and saturation.
+- Added casting checks to prevent male/female voice swaps before long renders.
 
 ### 0.3.2
 
