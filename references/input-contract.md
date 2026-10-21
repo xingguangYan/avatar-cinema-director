@@ -33,7 +33,14 @@ the directory containing the manifest.
     "bgm": "",
     "caption_font": "Arial",
     "device": "cpu",
-    "wav2lip_batch_size": 96
+    "wav2lip_batch_size": 96,
+    "background_focus": {
+      "16x9": {"x": 0.5, "y": 0.5},
+      "9x16": {"x": 0.5, "y": 0.5}
+    },
+    "shadow_opacity": 0.30,
+    "shadow_blur": 16.0,
+    "edge_feather": 1.15
   }
 }
 ```
@@ -80,6 +87,12 @@ the result.
   memory.
 - `options.face_pads`: four integers for Wav2Lip face padding; the default
   `[0, 24, 0, 0]` adds chin room.
+- `options.background_focus`: per-aspect crop focus from `0.0` to `1.0`. Use
+  `x` to retain the left/right part of the source and `y` for the top/bottom.
+- `options.shadow_opacity`: contact shadow strength; `0.20` to `0.40` is normal.
+- `options.shadow_blur`: contact shadow softness in panel pixels.
+- `options.edge_feather`: alpha edge blur after mask cleanup; `0.8` to `1.6` is
+  the useful range.
 
 ## Validation
 

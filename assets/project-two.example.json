@@ -42,6 +42,19 @@
     "caption_font": "Arial",
     "device": "cpu",
     "wav2lip_batch_size": 96,
+    "background_focus": {
+      "16x9": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "9x16": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "shadow_opacity": 0.3,
+    "shadow_blur": 16.0,
+    "edge_feather": 1.15,
     "face_pads": [
       0,
       24,

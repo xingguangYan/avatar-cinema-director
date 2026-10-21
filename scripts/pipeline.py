@@ -84,6 +84,63 @@ def write_png(path: Path, image: np.ndarray) -> None:
     buffer.tofile(str(path))
 
 
+def crop_background(
+    image: np.ndarray,
+    target_width: int,
+    target_height: int,
+    focus_x: float,
+    focus_y: float,
+) -> np.ndarray:
+    height, width = image.shape[:2]
+    scale = max(target_width / width, target_height / height)
+    resized_width = max(target_width, int(math.ceil(width * scale)))
+    resized_height = max(target_height, int(math.ceil(height * scale)))
+    interpolation = cv2.INTER_AREA if scale < 1 else cv2.INTER_CUBIC
+    resized = cv2.resize(
+        image,
+        (resized_width, resized_height),
+        interpolation=interpolation,
+    )
+
+    focus_x = min(1.0, max(0.0, float(focus_x)))
+    focus_y = min(1.0, max(0.0, float(focus_y)))
+    max_x = max(0, resized_width - target_width)
+    max_y = max(0, resized_height - target_height)
+    x0 = int(round(max_x * focus_x))
+    y0 = int(round(max_y * focus_y))
+    return resized[y0 : y0 + target_height, x0 : x0 + target_width]
+
+
+def build_backgrounds(project: dict[str, Any]) -> None:
+    background_dir = project["project_dir"] / "work" / "backgrounds"
+    background_dir.mkdir(parents=True, exist_ok=True)
+    focus_options = project["options"].get("background_focus", {})
+    if not isinstance(focus_options, dict):
+        raise RuntimeError("options.background_focus must be an object")
+
+    for aspect in project["outputs"]:
+        source = project["backgrounds"].get(aspect) or project["backgrounds"].get(
+            "default"
+        )
+        target_width, target_height = ASPECTS[aspect]
+        focus = focus_options.get(aspect, {})
+        if not isinstance(focus, dict):
+            focus = {}
+        cropped = crop_background(
+            read_image(source),
+            target_width,
+            target_height,
+            float(focus.get("x", 0.5)),
+            float(focus.get("y", 0.5)),
+        )
+        write_png(background_dir / f"{aspect}.png", cropped)
+        print(
+            f"BACKGROUND: {aspect} {cropped.shape[1]}x{cropped.shape[0]} "
+            f"focus=({float(focus.get('x', 0.5)):.2f},"
+            f"{float(focus.get('y', 0.5)):.2f})"
+        )
+
+
 def resolve_path(project_dir: Path, value: str) -> Path:
     path = Path(value).expanduser()
     return path if path.is_absolute() else project_dir / path
@@ -238,6 +295,19 @@ def validate_project(project: dict[str, Any]) -> None:
         if image.shape[1] < target_w * 0.5 or image.shape[0] < target_h * 0.5:
             print(f"WARNING: low-resolution background for {aspect}: {background}")
 
+    focus_options = project["options"].get("background_focus", {})
+    if not isinstance(focus_options, dict):
+        raise RuntimeError("options.background_focus must be an object")
+    for aspect, focus in focus_options.items():
+        if aspect not in ASPECTS:
+            raise RuntimeError(f"Unsupported background_focus aspect: {aspect}")
+        if not isinstance(focus, dict):
+            raise RuntimeError(f"background_focus.{aspect} must be an object")
+        for key in ("x", "y"):
+            value = float(focus.get(key, 0.5))
+            if value < 0.0 or value > 1.0:
+                raise RuntimeError(f"background_focus.{aspect}.{key} must be 0..1")
+
     bgm_value = str(project["options"].get("bgm") or "").strip()
     if bgm_value:
         bgm = resolve_path(project["project_dir"], bgm_value)
@@ -339,10 +409,48 @@ def build_panel(rgba: np.ndarray, fallback: tuple[int, int, int]) -> tuple[np.nd
     return np.clip(blend, 0, 255).astype(np.uint8), feather
 
 
+def build_contact_shadow(
+    mask: np.ndarray,
+    opacity: float,
+    blur_sigma: float,
+) -> np.ndarray:
+    visible = np.where(mask > 16)
+    if len(visible[0]) == 0:
+        raise RuntimeError("Cannot create a contact shadow from an empty mask")
+    y0, y1 = int(visible[0].min()), int(visible[0].max())
+    x0, x1 = int(visible[1].min()), int(visible[1].max())
+    center_x = (x0 + x1) // 2
+    center_y = min(PANEL_H - 2, max(2, y1 - 3))
+    axis_x = max(48, int((x1 - x0) * 0.34))
+    axis_y = max(10, int((y1 - y0) * 0.017))
+
+    shadow = np.zeros((PANEL_H, PANEL_W, 4), dtype=np.uint8)
+    alpha = int(round(255 * min(0.7, max(0.05, opacity))))
+    cv2.ellipse(
+        shadow,
+        (center_x, center_y),
+        (axis_x, axis_y),
+        0,
+        0,
+        360,
+        (0, 0, 0, alpha),
+        thickness=-1,
+        lineType=cv2.LINE_AA,
+    )
+    return cv2.GaussianBlur(
+        shadow,
+        (0, 0),
+        sigmaX=max(1.0, blur_sigma),
+        sigmaY=max(1.0, blur_sigma * 0.55),
+    )
+
+
 def build_panels(project: dict[str, Any]) -> None:
     panel_dir = project["project_dir"] / "work" / "panels"
     panel_dir.mkdir(parents=True, exist_ok=True)
     fallback = tuple(project["options"].get("panel_fallback", [48, 34, 26]))
+    shadow_opacity = float(project["options"].get("shadow_opacity", 0.30))
+    shadow_blur = float(project["options"].get("shadow_blur", 16.0))
     for character in project["characters"]:
         image_bgr = read_image(character["photo"])
         image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
@@ -353,6 +461,10 @@ def build_panels(project: dict[str, Any]) -> None:
         write_png(
             panel_dir / f"{character['id']}_cutout.png",
             cv2.cvtColor(rgba, cv2.COLOR_RGBA2BGRA),
+        )
+        write_png(
+            panel_dir / f"{character['id']}_shadow.png",
+            build_contact_shadow(mask, shadow_opacity, shadow_blur),
         )
         print(f"PANEL: {character['display_name']} -> {panel_dir}")
 
@@ -542,12 +654,25 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     return output
 
 
-def person_chain(video_index: int, mask_index: int, index: int, width: int, height: int) -> str:
+def person_chain(
+    video_index: int,
+    mask_index: int,
+    shadow_index: int,
+    index: int,
+    width: int,
+    height: int,
+    edge_feather: float,
+) -> str:
     return (
-        f"[{video_index}:v]format=rgba[rv{index}];"
-        f"[{mask_index}:v]format=gray[rm{index}];"
+        f"[{video_index}:v]format=rgba,"
+        f"eq=contrast=1.012:saturation=0.98:brightness=-0.006[rv{index}];"
+        f"[{mask_index}:v]format=gray,"
+        "curves=all='0/0 0.04/0 0.08/1 1/1',"
+        f"gblur=sigma={max(0.2, edge_feather):.2f}[rm{index}];"
         f"[rv{index}][rm{index}]alphamerge[ra{index}];"
         f"[ra{index}]scale={width}:{height}:flags=lanczos[rs{index}];"
+        f"[{shadow_index}:v]format=rgba,"
+        f"scale={width}:{height}:flags=lanczos[rsh{index}];"
     )
 
 
@@ -587,27 +712,39 @@ def build_filter_graph(
     fps = int(project["options"].get("fps", 30))
     frames = max(1, math.ceil(float(timeline["total_duration"]) * fps))
     graph = (
-        f"[0:v]scale={width}:{height}:force_original_aspect_ratio=increase,"
-        f"crop={width}:{height},"
+        "[0:v]"
         "eq=contrast=1.02:saturation=1.10:brightness=0.006,"
         f"zoompan=z='min(1.0+0.06*on/{frames},1.06)':"
         "x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
         f"d={frames}:s={width}x{height}:fps={fps},format=rgba[bg];"
     )
+    edge_feather = float(project["options"].get("edge_feather", 1.15))
     for index, (_, _, panel_w, panel_h) in enumerate(layout):
-        graph += person_chain(1 + index * 2, 2 + index * 2, index, panel_w, panel_h)
+        graph += person_chain(
+            1 + index * 3,
+            2 + index * 3,
+            3 + index * 3,
+            index,
+            panel_w,
+            panel_h,
+            edge_feather,
+        )
 
     current = "bg"
     for index, (base_x, base_y, _, _) in enumerate(layout):
         phase = 1.1 + index * 0.8
         sway_x = 5.0 + index * 1.5
         sway_y = 2.6 + index * 0.8
+        shadow_label = f"rshadow{index}"
         next_label = f"rvout{index}"
-        graph += (
-            f"[{current}][rs{index}]overlay="
+        position = (
             f"x='{base_x}+{sway_x}*sin(2*PI*t/6.3+{phase})':"
             f"y='{base_y}+{sway_y}*sin(2*PI*t/5.1+{phase})':"
-            f"eval=frame:format=auto:shortest=1[{next_label}];"
+            "eval=frame:format=auto:shortest=1"
+        )
+        graph += (
+            f"[{current}][rsh{index}]overlay={position}[{shadow_label}];"
+            f"[{shadow_label}][rs{index}]overlay={position}[{next_label}];"
         )
         current = next_label
 
@@ -693,6 +830,12 @@ def render_project(project: dict[str, Any], force: bool) -> None:
     ]
     if any(not path.exists() for path in talk_paths):
         raise RuntimeError("Run the talk stage before render")
+    cropped_backgrounds = {
+        aspect: project_dir / "work" / "backgrounds" / f"{aspect}.png"
+        for aspect in project["outputs"]
+    }
+    if any(not path.exists() for path in cropped_backgrounds.values()):
+        build_backgrounds(project)
 
     title_slug = project["options"].get("output_name") or slugify(
         project["title"], "talking-video"
@@ -724,7 +867,7 @@ def render_project(project: dict[str, Any], force: bool) -> None:
             print(f"RENDER: reuse {output}")
             continue
 
-        background = project["backgrounds"].get(aspect) or project["backgrounds"]["default"]
+        background = cropped_backgrounds[aspect]
         command = [
             str(paths["ffmpeg"]),
             "-y",
@@ -740,6 +883,9 @@ def render_project(project: dict[str, Any], force: bool) -> None:
         ]
         for character, talk in zip(project["characters"], talk_paths):
             mask = project_dir / "work" / "panels" / f"{character['id']}_mask.png"
+            shadow = project_dir / "work" / "panels" / f"{character['id']}_shadow.png"
+            if not shadow.exists():
+                raise RuntimeError("Run the panels stage to create contact shadows")
             command += [
                 "-i",
                 str(talk),
@@ -749,8 +895,14 @@ def render_project(project: dict[str, Any], force: bool) -> None:
                 "30",
                 "-i",
                 str(mask),
+                "-loop",
+                "1",
+                "-framerate",
+                "30",
+                "-i",
+                str(shadow),
             ]
-        audio_index = 1 + len(project["characters"]) * 2
+        audio_index = 1 + len(project["characters"]) * 3
         command += ["-i", str(master)]
         bgm_index = None
         if bgm is not None:
@@ -796,7 +948,7 @@ def render_project(project: dict[str, Any], force: bool) -> None:
             "-metadata",
             f"title={project['title']}",
             "-metadata",
-            "comment=Generated by talking-dialogue-video",
+            "comment=Generated by avatar-cinema-director",
             str(output),
         ]
         log_path = output.with_suffix(".render.log")
@@ -819,7 +971,15 @@ def main() -> None:
     parser.add_argument("--project", required=True, help="Project directory or project.json")
     parser.add_argument(
         "--stage",
-        choices=["validate", "audio", "panels", "talk", "render", "all"],
+        choices=[
+            "validate",
+            "audio",
+            "backgrounds",
+            "panels",
+            "talk",
+            "render",
+            "all",
+        ],
         default="all",
     )
     parser.add_argument("--force", action="store_true")
@@ -831,6 +991,8 @@ def main() -> None:
         return
     if args.stage in {"audio", "all"}:
         build_audio(project)
+    if args.stage in {"backgrounds", "all"}:
+        build_backgrounds(project)
     if args.stage in {"panels", "all"}:
         build_panels(project)
     if args.stage in {"talk", "all"}:

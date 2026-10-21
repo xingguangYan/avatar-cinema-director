@@ -1,4 +1,4 @@
 interface:
-  display_name: "Talking Dialogue Video"
-  short_description: "Single- and two-person talking video production"
-  default_prompt: "Use $talking-dialogue-video to create a talking video from my photos, background, and dialogue."
+  display_name: "Avatar Cinema Director"
+  short_description: "Cinematic single- and two-person talking video direction"
+  default_prompt: "Use $avatar-cinema-director to direct a cinematic talking video from my character photos, backgrounds, and dialogue."

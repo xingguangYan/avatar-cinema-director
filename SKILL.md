@@ -1,14 +1,18 @@
 ---
-name: talking-dialogue-video
-description: Create single- or two-person talking videos from user-supplied character photos, background photos, and dialogue, with lip sync, captions, and optional 16:9 and 9:16 renders.
+name: avatar-cinema-director
+description: Direct cinematic single- or two-person talking videos from user-supplied character photos, background photos, and dialogue, with lip sync, background-first compositing, captions, and optional 16:9 and 9:16 renders.
 metadata:
-  short-description: Single- and two-person talking video production
+  short-description: Cinematic single- and two-person talking video direction
+  version: 0.2.0
 ---
 
-# Talking Dialogue Video
+# Avatar Cinema Director
 
 Produce a finished talking video from still portraits. The workflow supports a
 single presenter or a two-person dialogue, with one or both output aspects.
+
+For installation, full manifest reference, composition internals, environment
+variables, troubleshooting, and release notes, read [README.md](README.md).
 
 ## Required User Assets
 
@@ -37,6 +41,24 @@ Read the route-specific checklist before preparing a project:
 - [Single presenter](references/single-speaker.md)
 - [Two-person dialogue](references/two-speaker.md)
 - [Input and manifest contract](references/input-contract.md)
+
+## Composition Invariant
+
+Crop each background to the exact output frame before compositing. Do not pass
+an uncropped source image directly into the character overlay graph.
+
+The required order is:
+
+1. Crop the user background to 1920x1080 or 1080x1920 using cover-crop with an
+   explicit focus point.
+2. Create a transparent character panel and a refined alpha mask.
+3. Create a soft contact shadow from the bottom of the character mask.
+4. Overlay the shadow, then the color-matched character, over the cropped
+   background.
+5. Add captions, subtle sway, vignette, fades, and audio.
+
+This ordering is what prevents characters from looking pasted onto an
+uncropped or differently proportioned background.
 
 ## Create The Project
 
@@ -76,15 +98,16 @@ If `TALKING_VIDEO_PYTHON` is unset, use the interpreter running the pipeline.
 The defaults target the current Windows installation and must be overridden on
 another machine.
 
-Useful partial stages are `validate`, `audio`, `panels`, `talk`, `render`, and
-`all`. Add `--force` only when existing generated media should be replaced.
+Useful partial stages are `validate`, `audio`, `backgrounds`, `panels`, `talk`,
+`render`, and `all`. Add `--force` only when existing generated media should be
+replaced.
 
 ## Verify
 
 The render stage checks output duration, dimensions, streams, and a complete
 decode. Also inspect one frame from the beginning, middle, and end of each
-aspect for framing and caption clipping. Report every generated file with its
-absolute path.
+aspect for framing, edge artifacts, contact shadow placement, and caption
+clipping. Report every generated file with its absolute path.
 
 ## Boundaries
 

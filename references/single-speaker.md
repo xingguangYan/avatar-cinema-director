@@ -15,12 +15,13 @@ character reading a script.
 1. Validate the manifest and source images.
 2. Synthesize one line at a time and build a master track plus one padded
    speaker track.
-3. Remove the character photo background and create a 768x1280 transparent
-   panel and mask.
-4. Run one static-image Wav2Lip render for the complete padded track.
-5. Composite the character over the tavern or user background.
-6. Add captions, subtle body sway, optional music, fades, and metadata.
-7. Render only the requested aspects.
+3. Crop the user background to every requested aspect before compositing.
+4. Remove the character photo background and create a 768x1280 transparent
+   panel, refined alpha mask, and contact shadow.
+5. Run one static-image Wav2Lip render for the complete padded track.
+6. Overlay the shadow and color-matched character over the cropped background.
+7. Add captions, subtle body sway, optional music, fades, and metadata.
+8. Render only the requested aspects.
 
 ## Composition
 
