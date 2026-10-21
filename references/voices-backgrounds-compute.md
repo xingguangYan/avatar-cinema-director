@@ -154,6 +154,30 @@ Recommended focus values are stored in:
 assets/backgrounds/catalog.json
 ```
 
+## Per-Character Color
+
+Brightness, contrast, and saturation can be adjusted independently by character:
+
+```json
+{
+  "character_color_adjustments": {
+    "eddie": {
+      "contrast": 1.04,
+      "saturation": 1.03,
+      "brightness": 0.07
+    },
+    "alice": {
+      "contrast": 1.012,
+      "saturation": 0.98,
+      "brightness": -0.006
+    }
+  }
+}
+```
+
+Use positive brightness to lift a dark portrait without changing the rest of the
+scene.
+
 ## Caption Size
 
 Set exact pixel sizes per aspect:

@@ -840,10 +840,14 @@ def person_chain(
     width: int,
     height: int,
     edge_feather: float,
+    contrast: float,
+    saturation: float,
+    brightness: float,
 ) -> str:
     return (
         f"[{video_index}:v]format=rgba,"
-        f"eq=contrast=1.012:saturation=0.98:brightness=-0.006[rv{index}];"
+        f"eq=contrast={contrast:.3f}:saturation={saturation:.3f}:"
+        f"brightness={brightness:.3f}[rv{index}];"
         f"[{mask_index}:v]format=gray,"
         "curves=all='0/0 0.04/0 0.08/1 1/1',"
         f"gblur=sigma={max(0.2, edge_feather):.2f}[rm{index}];"
@@ -897,7 +901,14 @@ def build_filter_graph(
         f"d={frames}:s={width}x{height}:fps={fps},format=rgba[bg];"
     )
     edge_feather = float(project["options"].get("edge_feather", 1.15))
+    color_adjustments = project["options"].get("character_color_adjustments", {})
+    if not isinstance(color_adjustments, dict):
+        color_adjustments = {}
     for index, (_, _, panel_w, panel_h) in enumerate(layout):
+        character = project["characters"][index]
+        adjustment = color_adjustments.get(character["id"], {})
+        if not isinstance(adjustment, dict):
+            adjustment = {}
         graph += person_chain(
             1 + index * 3,
             2 + index * 3,
@@ -906,6 +917,9 @@ def build_filter_graph(
             panel_w,
             panel_h,
             edge_feather,
+            float(adjustment.get("contrast", 1.012)),
+            float(adjustment.get("saturation", 0.98)),
+            float(adjustment.get("brightness", -0.006)),
         )
 
     current = "bg"

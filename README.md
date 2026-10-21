@@ -1357,6 +1357,11 @@ The pipeline does not verify identity or consent.
 
 ## Release Notes
 
+### 0.3.2
+
+- Added per-character contrast, saturation, and brightness adjustments.
+- Added the `character_color_adjustments` manifest option.
+
 ### 0.3.1
 
 - Added dialogue `translation` support for bilingual subtitles.
