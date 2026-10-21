@@ -6,6 +6,7 @@
       "id": "host",
       "display_name": "Host",
       "photo": "inputs/host.png",
+      "engine": "kokoro",
       "voice": "am_michael",
       "lang_code": "a",
       "speed": 0.98
@@ -27,7 +28,14 @@
   "options": {
     "bgm": "",
     "caption_font": "Arial",
-    "device": "cpu",
+    "caption_font_size_16x9": 42,
+    "caption_font_size_9x16": 46,
+    "caption_margin_v_16x9": 70,
+    "caption_margin_v_9x16": 180,
+    "voice_volume": 1.06,
+    "bgm_volume": 0.075,
+    "compute_device": "auto",
+    "video_encoder": "auto",
     "wav2lip_batch_size": 96,
     "background_focus": {
       "16x9": {

@@ -4,3 +4,4 @@ __pycache__/
 work/
 output/
 .venv/
+assets/voices/samples/*.mp3

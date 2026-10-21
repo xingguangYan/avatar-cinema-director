@@ -63,6 +63,33 @@ def tool_paths() -> dict[str, Path]:
     }
 
 
+def compute_device(project: dict[str, Any]) -> str:
+    value = str(
+        project["options"].get(
+            "compute_device",
+            project["options"].get("device", "auto"),
+        )
+    ).lower()
+    if value == "auto" or value == "cpu":
+        return value
+    if value in {"gpu", "cuda"}:
+        return "cuda:0"
+    if value.startswith("gpu:"):
+        return "cuda:" + value.split(":", 1)[1]
+    return value
+
+
+def video_encoder_modes(project: dict[str, Any]) -> list[str]:
+    configured = str(project["options"].get("video_encoder", "auto")).lower()
+    if configured == "auto":
+        if compute_device(project) == "cpu":
+            return ["cpu"]
+        return ["nvidia", "cpu"]
+    if configured in {"gpu", "nvidia", "cuda"}:
+        return ["nvidia"]
+    return ["cpu"]
+
+
 def slugify(value: str, fallback: str) -> str:
     slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
     return slug or fallback
@@ -165,27 +192,48 @@ def load_project(project_arg: str) -> dict[str, Any]:
         character_id = str(
             item.get("id") or slugify(display_name, f"character-{index + 1}")
         )
+        engine = str(item.get("engine", "kokoro")).lower()
+        if engine not in {"kokoro", "edge"}:
+            raise RuntimeError(
+                f"Character {display_name} engine must be kokoro or edge"
+            )
         voice_value = str(item.get("voice") or "").strip()
         if not voice_value:
             raise RuntimeError(f"Character {display_name} is missing voice")
-        project_voice = resolve_path(project_dir, voice_value)
-        kokoro_voice = tool_paths()["kokoro"] / "voices" / (
-            voice_value if voice_value.endswith(".pt") else f"{voice_value}.pt"
-        )
-        if project_voice.exists():
-            voice_path = project_voice
-        elif kokoro_voice.exists():
-            voice_path = kokoro_voice
+        if engine == "kokoro":
+            project_voice = resolve_path(project_dir, voice_value)
+            installed_voice = (
+                Path(__file__).resolve().parents[1]
+                / "assets"
+                / "voices"
+                / "kokoro"
+                / (voice_value if voice_value.endswith(".pt") else f"{voice_value}.pt")
+            )
+            kokoro_voice = tool_paths()["kokoro"] / "voices" / (
+                voice_value if voice_value.endswith(".pt") else f"{voice_value}.pt"
+            )
+            if project_voice.exists():
+                voice_path: Path | str = project_voice
+            elif installed_voice.exists():
+                voice_path = installed_voice
+            elif kokoro_voice.exists():
+                voice_path = kokoro_voice
+            else:
+                voice_path = project_voice
         else:
-            voice_path = project_voice
+            voice_path = voice_value
         characters.append(
             {
                 "id": character_id,
                 "display_name": display_name,
                 "photo": resolve_path(project_dir, str(item.get("photo", ""))),
+                "engine": engine,
                 "voice": voice_path,
                 "lang_code": str(item.get("lang_code", "a")),
                 "speed": float(item.get("speed", 1.0)),
+                "rate": str(item.get("rate", "+0%")),
+                "pitch": str(item.get("pitch", "+0Hz")),
+                "edge_volume": str(item.get("edge_volume", "+0%")),
             }
         )
 
@@ -265,8 +313,11 @@ def validate_project(project: dict[str, Any]) -> None:
     for character in characters:
         if not character["photo"].exists():
             raise RuntimeError(f"Missing character photo: {character['photo']}")
-        if not character["voice"].exists():
-            raise RuntimeError(f"Missing voice: {character['voice']}")
+        if character["engine"] == "kokoro":
+            if not Path(character["voice"]).exists():
+                raise RuntimeError(f"Missing Kokoro voice: {character['voice']}")
+        elif not str(character["voice"]).strip():
+            raise RuntimeError(f"Missing Edge voice id: {character['display_name']}")
         image = read_image(character["photo"])
         min_side = min(image.shape[:2])
         if min_side < 512:
@@ -278,7 +329,10 @@ def validate_project(project: dict[str, Any]) -> None:
             print(f"WARNING: low-resolution character photo: {character['photo']}")
 
     if route == "two":
-        voices = {str(character["voice"]).casefold() for character in characters}
+        voices = {
+            f"{character['engine']}:{str(character['voice']).casefold()}"
+            for character in characters
+        }
         if len(voices) == 1:
             print("WARNING: both characters use the same voice file")
 
@@ -314,6 +368,47 @@ def validate_project(project: dict[str, Any]) -> None:
         if not bgm.exists():
             raise RuntimeError(f"Missing background music: {bgm}")
 
+    device = compute_device(project)
+    if device not in {"auto", "cpu"}:
+        match = re.fullmatch(r"cuda:(\d+)", device)
+        if match is None:
+            raise RuntimeError(
+                "compute_device must be auto, cpu, gpu:N, or cuda:N"
+            )
+        if int(match.group(1)) < 0:
+            raise RuntimeError("compute_device GPU index must be non-negative")
+
+    video_encoder = str(project["options"].get("video_encoder", "auto")).lower()
+    if video_encoder not in {"auto", "cpu", "gpu", "nvidia", "cuda"}:
+        raise RuntimeError(
+            "video_encoder must be auto, cpu, gpu, nvidia, or cuda"
+        )
+
+    voice_volume = float(project["options"].get("voice_volume", 1.0))
+    bgm_volume = float(project["options"].get("bgm_volume", 0.075))
+    if not 0.0 <= voice_volume <= 3.0:
+        raise RuntimeError("voice_volume must be between 0.0 and 3.0")
+    if not 0.0 <= bgm_volume <= 1.0:
+        raise RuntimeError("bgm_volume must be between 0.0 and 1.0")
+
+    for aspect in project["outputs"]:
+        font_size = int(
+            project["options"].get(
+                f"caption_font_size_{aspect}",
+                42 if aspect == "16x9" else 46,
+            )
+        )
+        margin_v = int(
+            project["options"].get(
+                f"caption_margin_v_{aspect}",
+                70 if aspect == "16x9" else 180,
+            )
+        )
+        if font_size < 16 or font_size > 120:
+            raise RuntimeError(f"caption_font_size_{aspect} must be 16..120")
+        if margin_v < 0 or margin_v > ASPECTS[aspect][1] // 2:
+            raise RuntimeError(f"caption_margin_v_{aspect} is out of range")
+
     print(
         f"VALID: route={route} characters={len(characters)} "
         f"lines={len(project['dialogue'])} outputs={','.join(project['outputs'])}"
@@ -335,8 +430,12 @@ def build_audio(project: dict[str, Any]) -> None:
                 "id": item["id"],
                 "display_name": item["display_name"],
                 "voice": str(item["voice"]),
+                "engine": item["engine"],
                 "lang_code": item["lang_code"],
                 "speed": item["speed"],
+                "rate": item["rate"],
+                "pitch": item["pitch"],
+                "edge_volume": item["edge_volume"],
             }
             for item in project["characters"]
         ],
@@ -352,8 +451,17 @@ def build_audio(project: dict[str, Any]) -> None:
         encoding="utf-8",
     )
     worker = Path(__file__).with_name("audio_worker.py")
+    environment = os.environ.copy()
+    device = compute_device(project)
+    if device == "cpu":
+        environment["CUDA_VISIBLE_DEVICES"] = ""
+    else:
+        match = re.fullmatch(r"cuda:(\d+)", device)
+        if match is not None:
+            environment["CUDA_VISIBLE_DEVICES"] = match.group(1)
     subprocess.run(
         [str(paths["audio_python"]), str(worker), "--spec", str(spec_path)],
+        env=environment,
         check=True,
     )
     if not (audio_dir / "timeline.json").exists():
@@ -519,6 +627,7 @@ def run_wav2lip(project: dict[str, Any], character: dict[str, Any], force: bool)
 
     pads = project["options"].get("face_pads", [0, 24, 0, 0])
     batch_size = int(project["options"].get("wav2lip_batch_size", 96))
+    device = compute_device(project)
     command = [
         str(paths["python"]),
         str(paths["wav2lip"] / "inference.py"),
@@ -543,6 +652,12 @@ def run_wav2lip(project: dict[str, Any], character: dict[str, Any], force: bool)
     ]
     log_path = output.with_suffix(".log")
     environment = os.environ.copy()
+    if device == "cpu":
+        environment["CUDA_VISIBLE_DEVICES"] = ""
+    else:
+        match = re.fullmatch(r"cuda:(\d+)", device)
+        if match is not None:
+            environment["CUDA_VISIBLE_DEVICES"] = match.group(1)
     environment["PYTHONPATH"] = os.pathsep.join(
         [str(paths["wav2lip"]), environment.get("PYTHONPATH", "")]
     )
@@ -749,6 +864,9 @@ def build_filter_graph(
         current = next_label
 
     fade_start = max(0.0, float(timeline["total_duration"]) - 1.2)
+    voice_volume = float(project["options"].get("voice_volume", 1.0))
+    bgm_volume = float(project["options"].get("bgm_volume", 0.075))
+    limiter_limit = float(project["options"].get("limiter_limit", 0.95))
     graph += (
         f"[{current}]eq=contrast=1.03:saturation=1.06:brightness=0.004,"
         "unsharp=5:5:0.30:5:5:0.0,vignette=PI/4.6,"
@@ -759,19 +877,19 @@ def build_filter_graph(
         "highpass=f=72,lowpass=f=13500,"
         "equalizer=f=210:t=q:w=0.8:g=1.0,"
         "acompressor=threshold=0.14:ratio=2.4:attack=18:release=240,"
-        "loudnorm=I=-16:TP=-1.5:LRA=8,volume=1.06[voice];"
+        f"loudnorm=I=-16:TP=-1.5:LRA=8,volume={voice_volume:.3f}[voice];"
     )
     if bgm_index is None:
-        graph += "[voice]alimiter=limit=0.95[aout]"
+        graph += f"[voice]alimiter=limit={limiter_limit:.3f}[aout]"
     else:
         graph += (
             f"[{bgm_index}:a]aresample=48000,"
             "aformat=sample_fmts=fltp:channel_layouts=stereo,"
-            "volume=0.075,afade=t=in:st=0:d=2.2,"
+            f"volume={bgm_volume:.3f},afade=t=in:st=0:d=2.2,"
             f"afade=t=out:st={max(0.0, float(timeline['total_duration']) - 3.2):.3f}:"
             "d=3.2[bgm];"
             "[voice][bgm]amix=inputs=2:duration=first:dropout_transition=0:"
-            "normalize=0,alimiter=limit=0.95[aout]"
+            f"normalize=0,alimiter=limit={limiter_limit:.3f}[aout]"
         )
     return graph
 
@@ -848,9 +966,24 @@ def render_project(project: dict[str, Any], force: bool) -> None:
     for aspect in project["outputs"]:
         width, height = ASPECTS[aspect]
         caption_dir = project_dir / "work" / "render" / aspect
-        font_size = 42 if aspect == "16x9" else 46
-        margin_v = 70 if aspect == "16x9" else 180
-        wrap_limit = 58 if aspect == "16x9" else 46
+        font_size = int(
+            project["options"].get(
+                f"caption_font_size_{aspect}",
+                42 if aspect == "16x9" else 46,
+            )
+        )
+        margin_v = int(
+            project["options"].get(
+                f"caption_margin_v_{aspect}",
+                70 if aspect == "16x9" else 180,
+            )
+        )
+        wrap_limit = int(
+            project["options"].get(
+                f"caption_wrap_{aspect}",
+                58 if aspect == "16x9" else 46,
+            )
+        )
         caption = build_captions(
             project,
             timeline,
@@ -925,18 +1058,6 @@ def render_project(project: dict[str, Any], force: bool) -> None:
             "[aout]",
             "-t",
             f"{float(timeline['total_duration']):.3f}",
-            "-c:v",
-            "libx264",
-            "-preset",
-            "veryfast",
-            "-crf",
-            "20",
-            "-profile:v",
-            "high",
-            "-pix_fmt",
-            "yuv420p",
-            "-r",
-            "30",
             "-c:a",
             "aac",
             "-b:a",
@@ -947,20 +1068,75 @@ def render_project(project: dict[str, Any], force: bool) -> None:
             "+faststart",
             "-metadata",
             f"title={project['title']}",
-            "-metadata",
-            "comment=Generated by avatar-cinema-director",
-            str(output),
         ]
         log_path = output.with_suffix(".render.log")
-        with log_path.open("w", encoding="utf-8", errors="replace") as log:
-            process = subprocess.run(
-                command,
-                cwd=caption_dir,
-                stdout=log,
-                stderr=subprocess.STDOUT,
-                text=True,
-            )
-        if process.returncode != 0:
+        modes = video_encoder_modes(project)
+        render_environment = os.environ.copy()
+        render_device = compute_device(project)
+        if render_device.startswith("cuda:"):
+            render_environment["CUDA_VISIBLE_DEVICES"] = render_device.split(":", 1)[1]
+        succeeded = False
+        for mode_index, mode in enumerate(modes):
+            encoder_command = command.copy()
+            if mode == "nvidia":
+                encoder_args = [
+                    "-c:v",
+                    "h264_nvenc",
+                    "-preset",
+                    "p5",
+                    "-tune",
+                    "hq",
+                    "-rc",
+                    "vbr",
+                    "-cq",
+                    "20",
+                    "-b:v",
+                    "8M",
+                    "-maxrate",
+                    "12M",
+                    "-bufsize",
+                    "16M",
+                    "-spatial-aq",
+                    "1",
+                ]
+            else:
+                encoder_args = [
+                    "-c:v",
+                    "libx264",
+                    "-preset",
+                    "veryfast",
+                    "-crf",
+                    "20",
+                ]
+            encoder_command += encoder_args + [
+                "-profile:v",
+                "high",
+                "-pix_fmt",
+                "yuv420p",
+                "-r",
+                "30",
+                "-metadata",
+                "comment=Generated by avatar-cinema-director",
+                "-metadata",
+                f"encoder_mode={mode}",
+                str(output),
+            ]
+            log_mode = "w" if mode_index == 0 else "a"
+            with log_path.open(log_mode, encoding="utf-8", errors="replace") as log:
+                if mode_index > 0:
+                    log.write(f"\n[avatar-cinema-director] fallback encoder={mode}\n")
+                process = subprocess.run(
+                    encoder_command,
+                    cwd=caption_dir,
+                    env=render_environment,
+                    stdout=log,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                )
+            if process.returncode == 0:
+                succeeded = True
+                break
+        if not succeeded:
             tail = log_path.read_text(encoding="utf-8", errors="replace").splitlines()[-20:]
             raise RuntimeError(f"Render failed:\n" + "\n".join(tail))
         verify_output(output, float(timeline["total_duration"]), width, height)

@@ -1,0 +1,102 @@
+{
+  "description": "Curated 16:9 and 9:16 background pack for Avatar Cinema Director",
+  "license": "Unsplash License",
+  "items": [
+    {
+      "id": "warm-tavern",
+      "label": "Warm Tavern",
+      "mood": "warm, intimate, amber",
+      "wide": "warm-tavern_16x9.jpg",
+      "portrait": "warm-tavern_9x16.jpg",
+      "recommended_focus": {
+        "16x9": {"x": 0.5, "y": 0.5},
+        "9x16": {"x": 0.5, "y": 0.42}
+      },
+      "source": "https://images.unsplash.com/photo-1514933651103-005eec06c04b"
+    },
+    {
+      "id": "daylight-cafe",
+      "label": "Daylight Cafe",
+      "mood": "bright, relaxed, daytime",
+      "wide": "daylight-cafe_16x9.jpg",
+      "portrait": "daylight-cafe_9x16.jpg",
+      "recommended_focus": {
+        "16x9": {"x": 0.52, "y": 0.5},
+        "9x16": {"x": 0.48, "y": 0.45}
+      },
+      "source": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+    },
+    {
+      "id": "modern-office",
+      "label": "Modern Office",
+      "mood": "clean, professional, neutral",
+      "wide": "modern-office_16x9.jpg",
+      "portrait": "modern-office_9x16.jpg",
+      "recommended_focus": {
+        "16x9": {"x": 0.5, "y": 0.5},
+        "9x16": {"x": 0.58, "y": 0.45}
+      },
+      "source": "https://images.unsplash.com/photo-1497366811353-6870744d04b2"
+    },
+    {
+      "id": "creative-studio",
+      "label": "Creative Studio",
+      "mood": "contemporary, editorial, bright",
+      "wide": "creative-studio_16x9.jpg",
+      "portrait": "creative-studio_9x16.jpg",
+      "recommended_focus": {
+        "16x9": {"x": 0.5, "y": 0.48},
+        "9x16": {"x": 0.54, "y": 0.48}
+      },
+      "source": "https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+    },
+    {
+      "id": "library-lounge",
+      "label": "Library Lounge",
+      "mood": "scholarly, quiet, warm wood",
+      "wide": "library-lounge_16x9.jpg",
+      "portrait": "library-lounge_9x16.jpg",
+      "recommended_focus": {
+        "16x9": {"x": 0.5, "y": 0.5},
+        "9x16": {"x": 0.5, "y": 0.4}
+      },
+      "source": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da"
+    },
+    {
+      "id": "rooftop-evening",
+      "label": "Rooftop Evening",
+      "mood": "urban, cinematic, blue hour",
+      "wide": "rooftop-evening_16x9.jpg",
+      "portrait": "rooftop-evening_9x16.jpg",
+      "recommended_focus": {
+        "16x9": {"x": 0.5, "y": 0.52},
+        "9x16": {"x": 0.56, "y": 0.45}
+      },
+      "source": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+    },
+    {
+      "id": "tea-house",
+      "label": "Tea House",
+      "mood": "calm, Asian-inspired, natural",
+      "wide": "tea-house_16x9.jpg",
+      "portrait": "tea-house_9x16.jpg",
+      "recommended_focus": {
+        "16x9": {"x": 0.5, "y": 0.55},
+        "9x16": {"x": 0.5, "y": 0.46}
+      },
+      "source": "https://images.unsplash.com/photo-1544787219-7f47ccb76574"
+    },
+    {
+      "id": "city-night",
+      "label": "City Night",
+      "mood": "night, energetic, high contrast",
+      "wide": "city-night_16x9.jpg",
+      "portrait": "city-night_9x16.jpg",
+      "recommended_focus": {
+        "16x9": {"x": 0.5, "y": 0.5},
+        "9x16": {"x": 0.55, "y": 0.5}
+      },
+      "source": "https://images.unsplash.com/photo-1519608487953-e999c86e7455"
+    }
+  ]
+}

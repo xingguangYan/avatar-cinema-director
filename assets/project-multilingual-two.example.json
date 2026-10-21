@@ -1,0 +1,75 @@
+{
+  "route": "two",
+  "title": "Multilingual Dialogue",
+  "characters": [
+    {
+      "id": "host",
+      "display_name": "Host",
+      "photo": "inputs/host.png",
+      "engine": "edge",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "edge_volume": "+0%"
+    },
+    {
+      "id": "guest",
+      "display_name": "Guest",
+      "photo": "inputs/guest.png",
+      "engine": "edge",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "edge_volume": "+0%"
+    }
+  ],
+  "backgrounds": {
+    "16x9": "inputs/background-16x9.jpg",
+    "9x16": "inputs/background-9x16.jpg"
+  },
+  "dialogue": [
+    {
+      "speaker": "Host",
+      "text": "你好，欢迎来到今天的节目。"
+    },
+    {
+      "speaker": "Guest",
+      "text": "Hello, thank you for having me."
+    }
+  ],
+  "outputs": [
+    "16x9",
+    "9x16"
+  ],
+  "options": {
+    "caption_font": "Arial",
+    "caption_font_size_16x9": 44,
+    "caption_font_size_9x16": 48,
+    "caption_margin_v_16x9": 72,
+    "caption_margin_v_9x16": 184,
+    "voice_volume": 1.06,
+    "bgm_volume": 0.06,
+    "compute_device": "auto",
+    "video_encoder": "auto",
+    "wav2lip_batch_size": 96,
+    "background_focus": {
+      "16x9": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "9x16": {
+        "x": 0.5,
+        "y": 0.45
+      }
+    },
+    "shadow_opacity": 0.3,
+    "shadow_blur": 16.0,
+    "edge_feather": 1.15,
+    "face_pads": [
+      0,
+      24,
+      0,
+      0
+    ]
+  }
+}

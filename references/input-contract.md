@@ -14,6 +14,7 @@ the directory containing the manifest.
       "id": "host",
       "display_name": "Host",
       "photo": "inputs/host.png",
+      "engine": "kokoro",
       "voice": "am_michael",
       "lang_code": "a",
       "speed": 0.98
@@ -32,7 +33,12 @@ the directory containing the manifest.
   "options": {
     "bgm": "",
     "caption_font": "Arial",
-    "device": "cpu",
+    "caption_font_size_16x9": 42,
+    "caption_font_size_9x16": 46,
+    "voice_volume": 1.06,
+    "bgm_volume": 0.075,
+    "compute_device": "auto",
+    "video_encoder": "auto",
     "wav2lip_batch_size": 96,
     "background_focus": {
       "16x9": {"x": 0.5, "y": 0.5},
@@ -54,8 +60,10 @@ left/right or top/bottom placement.
 
 `speaker` must match either a character `id` or `display_name`.
 
-`voice` can be an absolute `.pt` path, a project-relative path, or a voice
-filename without `.pt` under the configured Kokoro voice directory.
+`engine` is `kokoro` or `edge`. For Kokoro, `voice` can be an absolute `.pt`
+path, a project-relative path, or a bundled voice filename without `.pt`. For
+Edge, `voice` is the short name from `assets/voices/catalog.json`, such as
+`zh-CN-XiaoxiaoNeural`.
 
 ## Required User Photos
 
@@ -93,6 +101,12 @@ the result.
 - `options.shadow_blur`: contact shadow softness in panel pixels.
 - `options.edge_feather`: alpha edge blur after mask cleanup; `0.8` to `1.6` is
   the useful range.
+- `options.compute_device`: `auto`, `cpu`, `gpu:N`, or `cuda:N`.
+- `options.video_encoder`: `auto`, `cpu`, `nvidia`, `gpu`, or `cuda`.
+- `options.caption_font_size_16x9` and `_9x16`: exact caption font sizes.
+- `options.caption_margin_v_16x9` and `_9x16`: bottom caption margins.
+- `options.voice_volume`: final dialogue gain after loudness normalization.
+- `options.bgm_volume`: music gain relative to the dialogue track.
 
 ## Validation
 

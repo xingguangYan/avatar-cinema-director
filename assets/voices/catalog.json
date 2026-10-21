@@ -1,0 +1,7017 @@
+{
+  "generated_at": "2026-10-21T12:39:50.061219+00:00",
+  "counts": {
+    "kokoro_offline_voices": 54,
+    "edge_online_voices": 322,
+    "total_voices": 376,
+    "locales": 142,
+    "language_families": 75,
+    "samples": 52
+  },
+  "kokoro": [
+    {
+      "id": "af_alloy",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_alloy.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_alloy.pt"
+    },
+    {
+      "id": "af_aoede",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_aoede.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_aoede.pt"
+    },
+    {
+      "id": "af_bella",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_bella.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_bella.pt"
+    },
+    {
+      "id": "af_heart",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_heart.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_heart.pt"
+    },
+    {
+      "id": "af_jessica",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_jessica.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_jessica.pt"
+    },
+    {
+      "id": "af_kore",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_kore.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_kore.pt"
+    },
+    {
+      "id": "af_nicole",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_nicole.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_nicole.pt"
+    },
+    {
+      "id": "af_nova",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_nova.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_nova.pt"
+    },
+    {
+      "id": "af_river",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_river.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_river.pt"
+    },
+    {
+      "id": "af_sarah",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_sarah.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_sarah.pt"
+    },
+    {
+      "id": "af_sky",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/af_sky.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/af_sky.pt"
+    },
+    {
+      "id": "am_adam",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/am_adam.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/am_adam.pt"
+    },
+    {
+      "id": "am_echo",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/am_echo.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/am_echo.pt"
+    },
+    {
+      "id": "am_eric",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/am_eric.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/am_eric.pt"
+    },
+    {
+      "id": "am_fenrir",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/am_fenrir.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/am_fenrir.pt"
+    },
+    {
+      "id": "am_liam",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/am_liam.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/am_liam.pt"
+    },
+    {
+      "id": "am_michael",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/am_michael.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/am_michael.pt"
+    },
+    {
+      "id": "am_onyx",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/am_onyx.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/am_onyx.pt"
+    },
+    {
+      "id": "am_puck",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/am_puck.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/am_puck.pt"
+    },
+    {
+      "id": "am_santa",
+      "engine": "kokoro",
+      "locale": "en-US",
+      "language": "American English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/am_santa.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/am_santa.pt"
+    },
+    {
+      "id": "bf_alice",
+      "engine": "kokoro",
+      "locale": "en-GB",
+      "language": "British English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/bf_alice.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/bf_alice.pt"
+    },
+    {
+      "id": "bf_emma",
+      "engine": "kokoro",
+      "locale": "en-GB",
+      "language": "British English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/bf_emma.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/bf_emma.pt"
+    },
+    {
+      "id": "bf_isabella",
+      "engine": "kokoro",
+      "locale": "en-GB",
+      "language": "British English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/bf_isabella.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/bf_isabella.pt"
+    },
+    {
+      "id": "bf_lily",
+      "engine": "kokoro",
+      "locale": "en-GB",
+      "language": "British English",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/bf_lily.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/bf_lily.pt"
+    },
+    {
+      "id": "bm_daniel",
+      "engine": "kokoro",
+      "locale": "en-GB",
+      "language": "British English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/bm_daniel.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/bm_daniel.pt"
+    },
+    {
+      "id": "bm_fable",
+      "engine": "kokoro",
+      "locale": "en-GB",
+      "language": "British English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/bm_fable.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/bm_fable.pt"
+    },
+    {
+      "id": "bm_george",
+      "engine": "kokoro",
+      "locale": "en-GB",
+      "language": "British English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/bm_george.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/bm_george.pt"
+    },
+    {
+      "id": "bm_lewis",
+      "engine": "kokoro",
+      "locale": "en-GB",
+      "language": "British English",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/bm_lewis.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/bm_lewis.pt"
+    },
+    {
+      "id": "ef_dora",
+      "engine": "kokoro",
+      "locale": "es-ES",
+      "language": "Spanish",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/ef_dora.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/ef_dora.pt"
+    },
+    {
+      "id": "em_alex",
+      "engine": "kokoro",
+      "locale": "es-ES",
+      "language": "Spanish",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/em_alex.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/em_alex.pt"
+    },
+    {
+      "id": "em_santa",
+      "engine": "kokoro",
+      "locale": "es-ES",
+      "language": "Spanish",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/em_santa.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/em_santa.pt"
+    },
+    {
+      "id": "ff_siwis",
+      "engine": "kokoro",
+      "locale": "fr-FR",
+      "language": "French",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/ff_siwis.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/ff_siwis.pt"
+    },
+    {
+      "id": "hf_alpha",
+      "engine": "kokoro",
+      "locale": "hi-IN",
+      "language": "Hindi",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/hf_alpha.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/hf_alpha.pt"
+    },
+    {
+      "id": "hf_beta",
+      "engine": "kokoro",
+      "locale": "hi-IN",
+      "language": "Hindi",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/hf_beta.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/hf_beta.pt"
+    },
+    {
+      "id": "hm_omega",
+      "engine": "kokoro",
+      "locale": "hi-IN",
+      "language": "Hindi",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/hm_omega.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/hm_omega.pt"
+    },
+    {
+      "id": "hm_psi",
+      "engine": "kokoro",
+      "locale": "hi-IN",
+      "language": "Hindi",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/hm_psi.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/hm_psi.pt"
+    },
+    {
+      "id": "if_sara",
+      "engine": "kokoro",
+      "locale": "it-IT",
+      "language": "Italian",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/if_sara.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/if_sara.pt"
+    },
+    {
+      "id": "im_nicola",
+      "engine": "kokoro",
+      "locale": "it-IT",
+      "language": "Italian",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/im_nicola.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/im_nicola.pt"
+    },
+    {
+      "id": "jf_alpha",
+      "engine": "kokoro",
+      "locale": "ja-JP",
+      "language": "Japanese",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/jf_alpha.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/jf_alpha.pt"
+    },
+    {
+      "id": "jf_gongitsune",
+      "engine": "kokoro",
+      "locale": "ja-JP",
+      "language": "Japanese",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/jf_gongitsune.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/jf_gongitsune.pt"
+    },
+    {
+      "id": "jf_nezumi",
+      "engine": "kokoro",
+      "locale": "ja-JP",
+      "language": "Japanese",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/jf_nezumi.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/jf_nezumi.pt"
+    },
+    {
+      "id": "jf_tebukuro",
+      "engine": "kokoro",
+      "locale": "ja-JP",
+      "language": "Japanese",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/jf_tebukuro.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/jf_tebukuro.pt"
+    },
+    {
+      "id": "jm_kumo",
+      "engine": "kokoro",
+      "locale": "ja-JP",
+      "language": "Japanese",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/jm_kumo.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/jm_kumo.pt"
+    },
+    {
+      "id": "pf_dora",
+      "engine": "kokoro",
+      "locale": "pt-BR",
+      "language": "Brazilian Portuguese",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/pf_dora.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/pf_dora.pt"
+    },
+    {
+      "id": "pm_alex",
+      "engine": "kokoro",
+      "locale": "pt-BR",
+      "language": "Brazilian Portuguese",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/pm_alex.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/pm_alex.pt"
+    },
+    {
+      "id": "pm_santa",
+      "engine": "kokoro",
+      "locale": "pt-BR",
+      "language": "Brazilian Portuguese",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/pm_santa.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/pm_santa.pt"
+    },
+    {
+      "id": "zf_xiaobei",
+      "engine": "kokoro",
+      "locale": "zh-CN",
+      "language": "Mandarin Chinese",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/zf_xiaobei.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/zf_xiaobei.pt"
+    },
+    {
+      "id": "zf_xiaoni",
+      "engine": "kokoro",
+      "locale": "zh-CN",
+      "language": "Mandarin Chinese",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/zf_xiaoni.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/zf_xiaoni.pt"
+    },
+    {
+      "id": "zf_xiaoxiao",
+      "engine": "kokoro",
+      "locale": "zh-CN",
+      "language": "Mandarin Chinese",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/zf_xiaoxiao.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/zf_xiaoxiao.pt"
+    },
+    {
+      "id": "zf_xiaoyi",
+      "engine": "kokoro",
+      "locale": "zh-CN",
+      "language": "Mandarin Chinese",
+      "gender": "female",
+      "offline": true,
+      "file": "kokoro/zf_xiaoyi.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/zf_xiaoyi.pt"
+    },
+    {
+      "id": "zm_yunjian",
+      "engine": "kokoro",
+      "locale": "zh-CN",
+      "language": "Mandarin Chinese",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/zm_yunjian.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/zm_yunjian.pt"
+    },
+    {
+      "id": "zm_yunxi",
+      "engine": "kokoro",
+      "locale": "zh-CN",
+      "language": "Mandarin Chinese",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/zm_yunxi.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/zm_yunxi.pt"
+    },
+    {
+      "id": "zm_yunxia",
+      "engine": "kokoro",
+      "locale": "zh-CN",
+      "language": "Mandarin Chinese",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/zm_yunxia.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/zm_yunxia.pt"
+    },
+    {
+      "id": "zm_yunyang",
+      "engine": "kokoro",
+      "locale": "zh-CN",
+      "language": "Mandarin Chinese",
+      "gender": "male",
+      "offline": true,
+      "file": "kokoro/zm_yunyang.pt",
+      "source": "https://hf-mirror.com/hexgrad/Kokoro-82M/resolve/main/voices/zm_yunyang.pt"
+    }
+  ],
+  "edge": [
+    {
+      "id": "af-ZA-AdriNeural",
+      "engine": "edge",
+      "locale": "af-ZA",
+      "language_code": "af",
+      "gender": "female",
+      "friendly_name": "Microsoft Adri Online (Natural) - Afrikaans (South Africa)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "af-ZA-WillemNeural",
+      "engine": "edge",
+      "locale": "af-ZA",
+      "language_code": "af",
+      "gender": "male",
+      "friendly_name": "Microsoft Willem Online (Natural) - Afrikaans (South Africa)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "am-ET-AmehaNeural",
+      "engine": "edge",
+      "locale": "am-ET",
+      "language_code": "am",
+      "gender": "male",
+      "friendly_name": "Microsoft Ameha Online (Natural) - Amharic (Ethiopia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "am-ET-MekdesNeural",
+      "engine": "edge",
+      "locale": "am-ET",
+      "language_code": "am",
+      "gender": "female",
+      "friendly_name": "Microsoft Mekdes Online (Natural) - Amharic (Ethiopia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-AE-FatimaNeural",
+      "engine": "edge",
+      "locale": "ar-AE",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Fatima Online (Natural) - Arabic (United Arab Emirates)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-AE-HamdanNeural",
+      "engine": "edge",
+      "locale": "ar-AE",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Hamdan Online (Natural) - Arabic (United Arab Emirates)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-BH-AliNeural",
+      "engine": "edge",
+      "locale": "ar-BH",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Ali Online (Natural) - Arabic (Bahrain)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-BH-LailaNeural",
+      "engine": "edge",
+      "locale": "ar-BH",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Laila Online (Natural) - Arabic (Bahrain)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-DZ-AminaNeural",
+      "engine": "edge",
+      "locale": "ar-DZ",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Amina Online (Natural) - Arabic (Algeria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-DZ-IsmaelNeural",
+      "engine": "edge",
+      "locale": "ar-DZ",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Ismael Online (Natural) - Arabic (Algeria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-EG-SalmaNeural",
+      "engine": "edge",
+      "locale": "ar-EG",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Salma Online (Natural) - Arabic (Egypt)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-EG-ShakirNeural",
+      "engine": "edge",
+      "locale": "ar-EG",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Shakir Online (Natural) - Arabic (Egypt)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-IQ-BasselNeural",
+      "engine": "edge",
+      "locale": "ar-IQ",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Bassel Online (Natural) - Arabic (Iraq)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-IQ-RanaNeural",
+      "engine": "edge",
+      "locale": "ar-IQ",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Rana Online (Natural) - Arabic (Iraq)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-JO-SanaNeural",
+      "engine": "edge",
+      "locale": "ar-JO",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Sana Online (Natural) - Arabic (Jordan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-JO-TaimNeural",
+      "engine": "edge",
+      "locale": "ar-JO",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Taim Online (Natural) - Arabic (Jordan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-KW-FahedNeural",
+      "engine": "edge",
+      "locale": "ar-KW",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Fahed Online (Natural) - Arabic (Kuwait)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-KW-NouraNeural",
+      "engine": "edge",
+      "locale": "ar-KW",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Noura Online (Natural) - Arabic (Kuwait)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-LB-LaylaNeural",
+      "engine": "edge",
+      "locale": "ar-LB",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Layla Online (Natural) - Arabic (Lebanon)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-LB-RamiNeural",
+      "engine": "edge",
+      "locale": "ar-LB",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Rami Online (Natural) - Arabic (Lebanon)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-LY-ImanNeural",
+      "engine": "edge",
+      "locale": "ar-LY",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Iman Online (Natural) - Arabic (Libya)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-LY-OmarNeural",
+      "engine": "edge",
+      "locale": "ar-LY",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Omar Online (Natural) - Arabic (Libya)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-MA-JamalNeural",
+      "engine": "edge",
+      "locale": "ar-MA",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Jamal Online (Natural) - Arabic (Morocco)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-MA-MounaNeural",
+      "engine": "edge",
+      "locale": "ar-MA",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Mouna Online (Natural) - Arabic (Morocco)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-OM-AbdullahNeural",
+      "engine": "edge",
+      "locale": "ar-OM",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Abdullah Online (Natural) - Arabic (Oman)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-OM-AyshaNeural",
+      "engine": "edge",
+      "locale": "ar-OM",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Aysha Online (Natural) - Arabic (Oman)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-QA-AmalNeural",
+      "engine": "edge",
+      "locale": "ar-QA",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Amal Online (Natural) - Arabic (Qatar)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-QA-MoazNeural",
+      "engine": "edge",
+      "locale": "ar-QA",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Moaz Online (Natural) - Arabic (Qatar)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-SA-HamedNeural",
+      "engine": "edge",
+      "locale": "ar-SA",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Hamed Online (Natural) - Arabic (Saudi Arabia)",
+      "offline": false,
+      "sample": "samples/ar-SA-HamedNeural.mp3",
+      "sample_text": "مرحبًا، هذه عينة صوتية.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-SA-ZariyahNeural",
+      "engine": "edge",
+      "locale": "ar-SA",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Zariyah Online (Natural) - Arabic (Saudi Arabia)",
+      "offline": false,
+      "sample": "samples/ar-SA-ZariyahNeural.mp3",
+      "sample_text": "مرحبًا، هذه عينة صوتية.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-SY-AmanyNeural",
+      "engine": "edge",
+      "locale": "ar-SY",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Amany Online (Natural) - Arabic (Syria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-SY-LaithNeural",
+      "engine": "edge",
+      "locale": "ar-SY",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Laith Online (Natural) - Arabic (Syria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-TN-HediNeural",
+      "engine": "edge",
+      "locale": "ar-TN",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Hedi Online (Natural) - Arabic (Tunisia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-TN-ReemNeural",
+      "engine": "edge",
+      "locale": "ar-TN",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Reem Online (Natural) - Arabic (Tunisia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-YE-MaryamNeural",
+      "engine": "edge",
+      "locale": "ar-YE",
+      "language_code": "ar",
+      "gender": "female",
+      "friendly_name": "Microsoft Maryam Online (Natural) - Arabic (Yemen)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ar-YE-SalehNeural",
+      "engine": "edge",
+      "locale": "ar-YE",
+      "language_code": "ar",
+      "gender": "male",
+      "friendly_name": "Microsoft Saleh Online (Natural) - Arabic (Yemen)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "az-AZ-BabekNeural",
+      "engine": "edge",
+      "locale": "az-AZ",
+      "language_code": "az",
+      "gender": "male",
+      "friendly_name": "Microsoft Babek Online (Natural) - Azerbaijani (Azerbaijan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "az-AZ-BanuNeural",
+      "engine": "edge",
+      "locale": "az-AZ",
+      "language_code": "az",
+      "gender": "female",
+      "friendly_name": "Microsoft Banu Online (Natural) - Azerbaijani (Azerbaijan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "bg-BG-BorislavNeural",
+      "engine": "edge",
+      "locale": "bg-BG",
+      "language_code": "bg",
+      "gender": "male",
+      "friendly_name": "Microsoft Borislav Online (Natural) - Bulgarian (Bulgaria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "bg-BG-KalinaNeural",
+      "engine": "edge",
+      "locale": "bg-BG",
+      "language_code": "bg",
+      "gender": "female",
+      "friendly_name": "Microsoft Kalina Online (Natural) - Bulgarian (Bulgaria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "bn-BD-NabanitaNeural",
+      "engine": "edge",
+      "locale": "bn-BD",
+      "language_code": "bn",
+      "gender": "female",
+      "friendly_name": "Microsoft Nabanita Online (Natural) - Bangla (Bangladesh)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "bn-BD-PradeepNeural",
+      "engine": "edge",
+      "locale": "bn-BD",
+      "language_code": "bn",
+      "gender": "male",
+      "friendly_name": "Microsoft Pradeep Online (Natural) - Bangla (Bangladesh)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "bn-IN-BashkarNeural",
+      "engine": "edge",
+      "locale": "bn-IN",
+      "language_code": "bn",
+      "gender": "male",
+      "friendly_name": "Microsoft Bashkar Online (Natural) - Bangla (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "নমস্কার, এটি একটি কণ্ঠ নমুনা।",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "bn-IN-TanishaaNeural",
+      "engine": "edge",
+      "locale": "bn-IN",
+      "language_code": "bn",
+      "gender": "female",
+      "friendly_name": "Microsoft Tanishaa Online (Natural) - Bengali (India)",
+      "offline": false,
+      "sample": "samples/bn-IN-TanishaaNeural.mp3",
+      "sample_text": "নমস্কার, এটি একটি কণ্ঠ নমুনা।",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "bs-BA-GoranNeural",
+      "engine": "edge",
+      "locale": "bs-BA",
+      "language_code": "bs",
+      "gender": "male",
+      "friendly_name": "Microsoft Goran Online (Natural) - Bosnian (Bosnia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "bs-BA-VesnaNeural",
+      "engine": "edge",
+      "locale": "bs-BA",
+      "language_code": "bs",
+      "gender": "female",
+      "friendly_name": "Microsoft Vesna Online (Natural) - Bosnian (Bosnia and Herzegovina)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ca-ES-EnricNeural",
+      "engine": "edge",
+      "locale": "ca-ES",
+      "language_code": "ca",
+      "gender": "male",
+      "friendly_name": "Microsoft Enric Online (Natural) - Catalan",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ca-ES-JoanaNeural",
+      "engine": "edge",
+      "locale": "ca-ES",
+      "language_code": "ca",
+      "gender": "female",
+      "friendly_name": "Microsoft Joana Online (Natural) - Catalan",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "cs-CZ-AntoninNeural",
+      "engine": "edge",
+      "locale": "cs-CZ",
+      "language_code": "cs",
+      "gender": "male",
+      "friendly_name": "Microsoft Antonin Online (Natural) - Czech (Czech)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Dobrý den, toto je ukázka hlasu.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "cs-CZ-VlastaNeural",
+      "engine": "edge",
+      "locale": "cs-CZ",
+      "language_code": "cs",
+      "gender": "female",
+      "friendly_name": "Microsoft Vlasta Online (Natural) - Czech (Czech)",
+      "offline": false,
+      "sample": "samples/cs-CZ-VlastaNeural.mp3",
+      "sample_text": "Dobrý den, toto je ukázka hlasu.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "cy-GB-AledNeural",
+      "engine": "edge",
+      "locale": "cy-GB",
+      "language_code": "cy",
+      "gender": "male",
+      "friendly_name": "Microsoft Aled Online (Natural) - Welsh (United Kingdom)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "cy-GB-NiaNeural",
+      "engine": "edge",
+      "locale": "cy-GB",
+      "language_code": "cy",
+      "gender": "female",
+      "friendly_name": "Microsoft Nia Online (Natural) - Welsh (United Kingdom)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "da-DK-ChristelNeural",
+      "engine": "edge",
+      "locale": "da-DK",
+      "language_code": "da",
+      "gender": "female",
+      "friendly_name": "Microsoft Christel Online (Natural) - Danish (Denmark)",
+      "offline": false,
+      "sample": "samples/da-DK-ChristelNeural.mp3",
+      "sample_text": "Hej, dette er en stemmeprøve.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "da-DK-JeppeNeural",
+      "engine": "edge",
+      "locale": "da-DK",
+      "language_code": "da",
+      "gender": "male",
+      "friendly_name": "Microsoft Jeppe Online (Natural) - Danish (Denmark)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hej, dette er en stemmeprøve.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-AT-IngridNeural",
+      "engine": "edge",
+      "locale": "de-AT",
+      "language_code": "de",
+      "gender": "female",
+      "friendly_name": "Microsoft Ingrid Online (Natural) - German (Austria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-AT-JonasNeural",
+      "engine": "edge",
+      "locale": "de-AT",
+      "language_code": "de",
+      "gender": "male",
+      "friendly_name": "Microsoft Jonas Online (Natural) - German (Austria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-CH-JanNeural",
+      "engine": "edge",
+      "locale": "de-CH",
+      "language_code": "de",
+      "gender": "male",
+      "friendly_name": "Microsoft Jan Online (Natural) - German (Switzerland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-CH-LeniNeural",
+      "engine": "edge",
+      "locale": "de-CH",
+      "language_code": "de",
+      "gender": "female",
+      "friendly_name": "Microsoft Leni Online (Natural) - German (Switzerland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-DE-AmalaNeural",
+      "engine": "edge",
+      "locale": "de-DE",
+      "language_code": "de",
+      "gender": "female",
+      "friendly_name": "Microsoft Amala Online (Natural) - German (Germany)",
+      "offline": false,
+      "sample": "samples/de-DE-AmalaNeural.mp3",
+      "sample_text": "Hallo, dies ist eine Sprachprobe.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-DE-ConradNeural",
+      "engine": "edge",
+      "locale": "de-DE",
+      "language_code": "de",
+      "gender": "male",
+      "friendly_name": "Microsoft Conrad Online (Natural) - German (Germany)",
+      "offline": false,
+      "sample": "samples/de-DE-ConradNeural.mp3",
+      "sample_text": "Hallo, dies ist eine Sprachprobe.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-DE-FlorianMultilingualNeural",
+      "engine": "edge",
+      "locale": "de-DE",
+      "language_code": "de",
+      "gender": "male",
+      "friendly_name": "Microsoft FlorianMultilingual Online (Natural) - German (Germany)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hallo, dies ist eine Sprachprobe.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-DE-KatjaNeural",
+      "engine": "edge",
+      "locale": "de-DE",
+      "language_code": "de",
+      "gender": "female",
+      "friendly_name": "Microsoft Katja Online (Natural) - German (Germany)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hallo, dies ist eine Sprachprobe.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-DE-KillianNeural",
+      "engine": "edge",
+      "locale": "de-DE",
+      "language_code": "de",
+      "gender": "male",
+      "friendly_name": "Microsoft Killian Online (Natural) - German (Germany)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hallo, dies ist eine Sprachprobe.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "de-DE-SeraphinaMultilingualNeural",
+      "engine": "edge",
+      "locale": "de-DE",
+      "language_code": "de",
+      "gender": "female",
+      "friendly_name": "Microsoft SeraphinaMultilingual Online (Natural) - German (Germany)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hallo, dies ist eine Sprachprobe.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "el-GR-AthinaNeural",
+      "engine": "edge",
+      "locale": "el-GR",
+      "language_code": "el",
+      "gender": "female",
+      "friendly_name": "Microsoft Athina Online (Natural) - Greek (Greece)",
+      "offline": false,
+      "sample": "samples/el-GR-AthinaNeural.mp3",
+      "sample_text": "Γεια σας, αυτό είναι ένα δείγμα φωνής.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "el-GR-NestorasNeural",
+      "engine": "edge",
+      "locale": "el-GR",
+      "language_code": "el",
+      "gender": "male",
+      "friendly_name": "Microsoft Nestoras Online (Natural) - Greek (Greece)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Γεια σας, αυτό είναι ένα δείγμα φωνής.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-AU-NatashaNeural",
+      "engine": "edge",
+      "locale": "en-AU",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Natasha Online (Natural) - English (Australia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-AU-WilliamMultilingualNeural",
+      "engine": "edge",
+      "locale": "en-AU",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft WilliamMultilingual Online (Natural) - English (Australia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-CA-ClaraNeural",
+      "engine": "edge",
+      "locale": "en-CA",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Clara Online (Natural) - English (Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-CA-LiamNeural",
+      "engine": "edge",
+      "locale": "en-CA",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Liam Online (Natural) - English (Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-GB-LibbyNeural",
+      "engine": "edge",
+      "locale": "en-GB",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Libby Online (Natural) - English (United Kingdom)",
+      "offline": false,
+      "sample": "samples/en-GB-LibbyNeural.mp3",
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-GB-MaisieNeural",
+      "engine": "edge",
+      "locale": "en-GB",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Maisie Online (Natural) - English (United Kingdom)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-GB-RyanNeural",
+      "engine": "edge",
+      "locale": "en-GB",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Ryan Online (Natural) - English (United Kingdom)",
+      "offline": false,
+      "sample": "samples/en-GB-RyanNeural.mp3",
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-GB-SoniaNeural",
+      "engine": "edge",
+      "locale": "en-GB",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Sonia Online (Natural) - English (United Kingdom)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-GB-ThomasNeural",
+      "engine": "edge",
+      "locale": "en-GB",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Thomas Online (Natural) - English (United Kingdom)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-HK-SamNeural",
+      "engine": "edge",
+      "locale": "en-HK",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Sam Online (Natural) - English (Hongkong)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-HK-YanNeural",
+      "engine": "edge",
+      "locale": "en-HK",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Yan Online (Natural) - English (Hong Kong SAR)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-IE-ConnorNeural",
+      "engine": "edge",
+      "locale": "en-IE",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Connor Online (Natural) - English (Ireland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-IE-EmilyNeural",
+      "engine": "edge",
+      "locale": "en-IE",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Emily Online (Natural) - English (Ireland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-IN-NeerjaExpressiveNeural",
+      "engine": "edge",
+      "locale": "en-IN",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Neerja Online (Natural) - English (India) (Preview)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-IN-NeerjaNeural",
+      "engine": "edge",
+      "locale": "en-IN",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Neerja Online (Natural) - English (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-IN-PrabhatNeural",
+      "engine": "edge",
+      "locale": "en-IN",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Prabhat Online (Natural) - English (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-KE-AsiliaNeural",
+      "engine": "edge",
+      "locale": "en-KE",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Asilia Online (Natural) - English (Kenya)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-KE-ChilembaNeural",
+      "engine": "edge",
+      "locale": "en-KE",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Chilemba Online (Natural) - English (Kenya)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-NG-AbeoNeural",
+      "engine": "edge",
+      "locale": "en-NG",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Abeo Online (Natural) - English (Nigeria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-NG-EzinneNeural",
+      "engine": "edge",
+      "locale": "en-NG",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Ezinne Online (Natural) - English (Nigeria)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-NZ-MitchellNeural",
+      "engine": "edge",
+      "locale": "en-NZ",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Mitchell Online (Natural) - English (New Zealand)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-NZ-MollyNeural",
+      "engine": "edge",
+      "locale": "en-NZ",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Molly Online (Natural) - English (New Zealand)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-PH-JamesNeural",
+      "engine": "edge",
+      "locale": "en-PH",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft James Online (Natural) - English (Philippines)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-PH-RosaNeural",
+      "engine": "edge",
+      "locale": "en-PH",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Rosa Online (Natural) - English (Philippines)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-SG-LunaNeural",
+      "engine": "edge",
+      "locale": "en-SG",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Luna Online (Natural) - English (Singapore)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-SG-WayneNeural",
+      "engine": "edge",
+      "locale": "en-SG",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Wayne Online (Natural) - English (Singapore)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-TZ-ElimuNeural",
+      "engine": "edge",
+      "locale": "en-TZ",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Elimu Online (Natural) - English (Tanzania)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-TZ-ImaniNeural",
+      "engine": "edge",
+      "locale": "en-TZ",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Imani Online (Natural) - English (Tanzania)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-US-AnaNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Ana Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": "samples/en-US-AnaNeural.mp3",
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "Cartoon",
+          "Conversation"
+        ],
+        "VoicePersonalities": [
+          "Cute"
+        ]
+      }
+    },
+    {
+      "id": "en-US-AndrewMultilingualNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft AndrewMultilingual Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": "samples/en-US-AndrewMultilingualNeural.mp3",
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "Conversation",
+          "Copilot"
+        ],
+        "VoicePersonalities": [
+          "Warm",
+          "Confident",
+          "Authentic",
+          "Honest"
+        ]
+      }
+    },
+    {
+      "id": "en-US-AndrewNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Andrew Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "Conversation",
+          "Copilot"
+        ],
+        "VoicePersonalities": [
+          "Warm",
+          "Confident",
+          "Authentic",
+          "Honest"
+        ]
+      }
+    },
+    {
+      "id": "en-US-AriaNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Aria Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "News",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Positive",
+          "Confident"
+        ]
+      }
+    },
+    {
+      "id": "en-US-AvaMultilingualNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft AvaMultilingual Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "Conversation",
+          "Copilot"
+        ],
+        "VoicePersonalities": [
+          "Expressive",
+          "Caring",
+          "Pleasant",
+          "Friendly"
+        ]
+      }
+    },
+    {
+      "id": "en-US-AvaNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Ava Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "Conversation",
+          "Copilot"
+        ],
+        "VoicePersonalities": [
+          "Expressive",
+          "Caring",
+          "Pleasant",
+          "Friendly"
+        ]
+      }
+    },
+    {
+      "id": "en-US-BrianMultilingualNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft BrianMultilingual Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "Conversation",
+          "Copilot"
+        ],
+        "VoicePersonalities": [
+          "Approachable",
+          "Casual",
+          "Sincere"
+        ]
+      }
+    },
+    {
+      "id": "en-US-BrianNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Brian Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "Conversation",
+          "Copilot"
+        ],
+        "VoicePersonalities": [
+          "Approachable",
+          "Casual",
+          "Sincere"
+        ]
+      }
+    },
+    {
+      "id": "en-US-ChristopherNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Christopher Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "News",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Reliable",
+          "Authority"
+        ]
+      }
+    },
+    {
+      "id": "en-US-EmmaMultilingualNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft EmmaMultilingual Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "Conversation",
+          "Copilot"
+        ],
+        "VoicePersonalities": [
+          "Cheerful",
+          "Clear",
+          "Conversational"
+        ]
+      }
+    },
+    {
+      "id": "en-US-EmmaNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Emma Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "Conversation",
+          "Copilot"
+        ],
+        "VoicePersonalities": [
+          "Cheerful",
+          "Clear",
+          "Conversational"
+        ]
+      }
+    },
+    {
+      "id": "en-US-EricNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Eric Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "News",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Rational"
+        ]
+      }
+    },
+    {
+      "id": "en-US-GuyNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Guy Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "News",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Passion"
+        ]
+      }
+    },
+    {
+      "id": "en-US-JennyNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Jenny Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Considerate",
+          "Comfort"
+        ]
+      }
+    },
+    {
+      "id": "en-US-MichelleNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Michelle Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "News",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Pleasant"
+        ]
+      }
+    },
+    {
+      "id": "en-US-RogerNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Roger Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "News",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Lively"
+        ]
+      }
+    },
+    {
+      "id": "en-US-SteffanNeural",
+      "engine": "edge",
+      "locale": "en-US",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Steffan Online (Natural) - English (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, this is a voice preview.",
+      "voice_tag": {
+        "ContentCategories": [
+          "News",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Rational"
+        ]
+      }
+    },
+    {
+      "id": "en-ZA-LeahNeural",
+      "engine": "edge",
+      "locale": "en-ZA",
+      "language_code": "en",
+      "gender": "female",
+      "friendly_name": "Microsoft Leah Online (Natural) - English (South Africa)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "en-ZA-LukeNeural",
+      "engine": "edge",
+      "locale": "en-ZA",
+      "language_code": "en",
+      "gender": "male",
+      "friendly_name": "Microsoft Luke Online (Natural) - English (South Africa)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-AR-ElenaNeural",
+      "engine": "edge",
+      "locale": "es-AR",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Elena Online (Natural) - Spanish (Argentina)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-AR-TomasNeural",
+      "engine": "edge",
+      "locale": "es-AR",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Tomas Online (Natural) - Spanish (Argentina)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-BO-MarceloNeural",
+      "engine": "edge",
+      "locale": "es-BO",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Marcelo Online (Natural) - Spanish (Bolivia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-BO-SofiaNeural",
+      "engine": "edge",
+      "locale": "es-BO",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Sofia Online (Natural) - Spanish (Bolivia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-CL-CatalinaNeural",
+      "engine": "edge",
+      "locale": "es-CL",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Catalina Online (Natural) - Spanish (Chile)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-CL-LorenzoNeural",
+      "engine": "edge",
+      "locale": "es-CL",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Lorenzo Online (Natural) - Spanish (Chile)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-CO-GonzaloNeural",
+      "engine": "edge",
+      "locale": "es-CO",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Gonzalo Online (Natural) - Spanish (Colombia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-CO-SalomeNeural",
+      "engine": "edge",
+      "locale": "es-CO",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Salome Online (Natural) - Spanish (Colombia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-CR-JuanNeural",
+      "engine": "edge",
+      "locale": "es-CR",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Juan Online (Natural) - Spanish (Costa Rica)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-CR-MariaNeural",
+      "engine": "edge",
+      "locale": "es-CR",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Maria Online (Natural) - Spanish (Costa Rica)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-CU-BelkysNeural",
+      "engine": "edge",
+      "locale": "es-CU",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Belkys Online (Natural) - Spanish (Cuba)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-CU-ManuelNeural",
+      "engine": "edge",
+      "locale": "es-CU",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Manuel Online (Natural) - Spanish (Cuba)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-DO-EmilioNeural",
+      "engine": "edge",
+      "locale": "es-DO",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Emilio Online (Natural) - Spanish (Dominican Republic)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-DO-RamonaNeural",
+      "engine": "edge",
+      "locale": "es-DO",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Ramona Online (Natural) - Spanish (Dominican Republic)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-EC-AndreaNeural",
+      "engine": "edge",
+      "locale": "es-EC",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Andrea Online (Natural) - Spanish (Ecuador)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-EC-LuisNeural",
+      "engine": "edge",
+      "locale": "es-EC",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Luis Online (Natural) - Spanish (Ecuador)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-ES-AlvaroNeural",
+      "engine": "edge",
+      "locale": "es-ES",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Alvaro Online (Natural) - Spanish (Spain)",
+      "offline": false,
+      "sample": "samples/es-ES-AlvaroNeural.mp3",
+      "sample_text": "Hola, esta es una muestra de voz.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-ES-ElviraNeural",
+      "engine": "edge",
+      "locale": "es-ES",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Elvira Online (Natural) - Spanish (Spain)",
+      "offline": false,
+      "sample": "samples/es-ES-ElviraNeural.mp3",
+      "sample_text": "Hola, esta es una muestra de voz.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-ES-XimenaNeural",
+      "engine": "edge",
+      "locale": "es-ES",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Ximena Online (Natural) - Spanish (Colombia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hola, esta es una muestra de voz.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-GQ-JavierNeural",
+      "engine": "edge",
+      "locale": "es-GQ",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Javier Online (Natural) - Spanish (Equatorial Guinea)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-GQ-TeresaNeural",
+      "engine": "edge",
+      "locale": "es-GQ",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Teresa Online (Natural) - Spanish (Equatorial Guinea)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-GT-AndresNeural",
+      "engine": "edge",
+      "locale": "es-GT",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Andres Online (Natural) - Spanish (Guatemala)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-GT-MartaNeural",
+      "engine": "edge",
+      "locale": "es-GT",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Marta Online (Natural) - Spanish (Guatemala)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-HN-CarlosNeural",
+      "engine": "edge",
+      "locale": "es-HN",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Carlos Online (Natural) - Spanish (Honduras)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-HN-KarlaNeural",
+      "engine": "edge",
+      "locale": "es-HN",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Karla Online (Natural) - Spanish (Honduras)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-MX-DaliaNeural",
+      "engine": "edge",
+      "locale": "es-MX",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Dalia Online (Natural) - Spanish (Mexico)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-MX-JorgeNeural",
+      "engine": "edge",
+      "locale": "es-MX",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Jorge Online (Natural) - Spanish (Mexico)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-NI-FedericoNeural",
+      "engine": "edge",
+      "locale": "es-NI",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Federico Online (Natural) - Spanish (Nicaragua)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-NI-YolandaNeural",
+      "engine": "edge",
+      "locale": "es-NI",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Yolanda Online (Natural) - Spanish (Nicaragua)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-PA-MargaritaNeural",
+      "engine": "edge",
+      "locale": "es-PA",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Margarita Online (Natural) - Spanish (Panama)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-PA-RobertoNeural",
+      "engine": "edge",
+      "locale": "es-PA",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Roberto Online (Natural) - Spanish (Panama)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-PE-AlexNeural",
+      "engine": "edge",
+      "locale": "es-PE",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Alex Online (Natural) - Spanish (Peru)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-PE-CamilaNeural",
+      "engine": "edge",
+      "locale": "es-PE",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Camila Online (Natural) - Spanish (Peru)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-PR-KarinaNeural",
+      "engine": "edge",
+      "locale": "es-PR",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Karina Online (Natural) - Spanish (Puerto Rico)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-PR-VictorNeural",
+      "engine": "edge",
+      "locale": "es-PR",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Victor Online (Natural) - Spanish (Puerto Rico)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-PY-MarioNeural",
+      "engine": "edge",
+      "locale": "es-PY",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Mario Online (Natural) - Spanish (Paraguay)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-PY-TaniaNeural",
+      "engine": "edge",
+      "locale": "es-PY",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Tania Online (Natural) - Spanish (Paraguay)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-SV-LorenaNeural",
+      "engine": "edge",
+      "locale": "es-SV",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Lorena Online (Natural) - Spanish (El Salvador)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-SV-RodrigoNeural",
+      "engine": "edge",
+      "locale": "es-SV",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Rodrigo Online (Natural) - Spanish (El Salvador)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-US-AlonsoNeural",
+      "engine": "edge",
+      "locale": "es-US",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Alonso Online (Natural) - Spanish (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-US-PalomaNeural",
+      "engine": "edge",
+      "locale": "es-US",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Paloma Online (Natural) - Spanish (United States)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-UY-MateoNeural",
+      "engine": "edge",
+      "locale": "es-UY",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Mateo Online (Natural) - Spanish (Uruguay)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-UY-ValentinaNeural",
+      "engine": "edge",
+      "locale": "es-UY",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Valentina Online (Natural) - Spanish (Uruguay)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-VE-PaolaNeural",
+      "engine": "edge",
+      "locale": "es-VE",
+      "language_code": "es",
+      "gender": "female",
+      "friendly_name": "Microsoft Paola Online (Natural) - Spanish (Venezuela)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "es-VE-SebastianNeural",
+      "engine": "edge",
+      "locale": "es-VE",
+      "language_code": "es",
+      "gender": "male",
+      "friendly_name": "Microsoft Sebastian Online (Natural) - Spanish (Venezuela)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "et-EE-AnuNeural",
+      "engine": "edge",
+      "locale": "et-EE",
+      "language_code": "et",
+      "gender": "female",
+      "friendly_name": "Microsoft Anu Online (Natural) - Estonian (Estonia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "et-EE-KertNeural",
+      "engine": "edge",
+      "locale": "et-EE",
+      "language_code": "et",
+      "gender": "male",
+      "friendly_name": "Microsoft Kert Online (Natural) - Estonian (Estonia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fa-IR-DilaraNeural",
+      "engine": "edge",
+      "locale": "fa-IR",
+      "language_code": "fa",
+      "gender": "female",
+      "friendly_name": "Microsoft Dilara Online (Natural) - Persian (Iran)",
+      "offline": false,
+      "sample": "samples/fa-IR-DilaraNeural.mp3",
+      "sample_text": "سلام، این یک نمونه صدا است.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fa-IR-FaridNeural",
+      "engine": "edge",
+      "locale": "fa-IR",
+      "language_code": "fa",
+      "gender": "male",
+      "friendly_name": "Microsoft Farid Online (Natural) - Persian (Iran)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "سلام، این یک نمونه صدا است.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fi-FI-HarriNeural",
+      "engine": "edge",
+      "locale": "fi-FI",
+      "language_code": "fi",
+      "gender": "male",
+      "friendly_name": "Microsoft Harri Online (Natural) - Finnish (Finland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hei, tämä on ääninäyte.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fi-FI-NooraNeural",
+      "engine": "edge",
+      "locale": "fi-FI",
+      "language_code": "fi",
+      "gender": "female",
+      "friendly_name": "Microsoft Noora Online (Natural) - Finnish (Finland)",
+      "offline": false,
+      "sample": "samples/fi-FI-NooraNeural.mp3",
+      "sample_text": "Hei, tämä on ääninäyte.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fil-PH-AngeloNeural",
+      "engine": "edge",
+      "locale": "fil-PH",
+      "language_code": "fil",
+      "gender": "male",
+      "friendly_name": "Microsoft Angelo Online (Natural) - Filipino (Philippines)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Kumusta, ito ay isang sample ng boses.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fil-PH-BlessicaNeural",
+      "engine": "edge",
+      "locale": "fil-PH",
+      "language_code": "fil",
+      "gender": "female",
+      "friendly_name": "Microsoft Blessica Online (Natural) - Filipino (Philippines)",
+      "offline": false,
+      "sample": "samples/fil-PH-BlessicaNeural.mp3",
+      "sample_text": "Kumusta, ito ay isang sample ng boses.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-BE-CharlineNeural",
+      "engine": "edge",
+      "locale": "fr-BE",
+      "language_code": "fr",
+      "gender": "female",
+      "friendly_name": "Microsoft Charline Online (Natural) - French (Belgium)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-BE-GerardNeural",
+      "engine": "edge",
+      "locale": "fr-BE",
+      "language_code": "fr",
+      "gender": "male",
+      "friendly_name": "Microsoft Gerard Online (Natural) - French (Belgium)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-CA-AntoineNeural",
+      "engine": "edge",
+      "locale": "fr-CA",
+      "language_code": "fr",
+      "gender": "male",
+      "friendly_name": "Microsoft Antoine Online (Natural) - French (Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-CA-JeanNeural",
+      "engine": "edge",
+      "locale": "fr-CA",
+      "language_code": "fr",
+      "gender": "male",
+      "friendly_name": "Microsoft Jean Online (Natural) - French (Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-CA-SylvieNeural",
+      "engine": "edge",
+      "locale": "fr-CA",
+      "language_code": "fr",
+      "gender": "female",
+      "friendly_name": "Microsoft Sylvie Online (Natural) - French (Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-CA-ThierryNeural",
+      "engine": "edge",
+      "locale": "fr-CA",
+      "language_code": "fr",
+      "gender": "male",
+      "friendly_name": "Microsoft Thierry Online (Natural) - French (Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-CH-ArianeNeural",
+      "engine": "edge",
+      "locale": "fr-CH",
+      "language_code": "fr",
+      "gender": "female",
+      "friendly_name": "Microsoft Ariane Online (Natural) - French (Switzerland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-CH-FabriceNeural",
+      "engine": "edge",
+      "locale": "fr-CH",
+      "language_code": "fr",
+      "gender": "male",
+      "friendly_name": "Microsoft Fabrice Online (Natural) - French (Switzerland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-FR-DeniseNeural",
+      "engine": "edge",
+      "locale": "fr-FR",
+      "language_code": "fr",
+      "gender": "female",
+      "friendly_name": "Microsoft Denise Online (Natural) - French (France)",
+      "offline": false,
+      "sample": "samples/fr-FR-DeniseNeural.mp3",
+      "sample_text": "Bonjour, ceci est un exemple de voix.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-FR-EloiseNeural",
+      "engine": "edge",
+      "locale": "fr-FR",
+      "language_code": "fr",
+      "gender": "female",
+      "friendly_name": "Microsoft Eloise Online (Natural) - French (France)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Bonjour, ceci est un exemple de voix.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-FR-HenriNeural",
+      "engine": "edge",
+      "locale": "fr-FR",
+      "language_code": "fr",
+      "gender": "male",
+      "friendly_name": "Microsoft Henri Online (Natural) - French (France)",
+      "offline": false,
+      "sample": "samples/fr-FR-HenriNeural.mp3",
+      "sample_text": "Bonjour, ceci est un exemple de voix.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-FR-RemyMultilingualNeural",
+      "engine": "edge",
+      "locale": "fr-FR",
+      "language_code": "fr",
+      "gender": "male",
+      "friendly_name": "Microsoft RemyMultilingual Online (Natural) - French (France)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Bonjour, ceci est un exemple de voix.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "fr-FR-VivienneMultilingualNeural",
+      "engine": "edge",
+      "locale": "fr-FR",
+      "language_code": "fr",
+      "gender": "female",
+      "friendly_name": "Microsoft VivienneMultilingual Online (Natural) - French (France)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Bonjour, ceci est un exemple de voix.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ga-IE-ColmNeural",
+      "engine": "edge",
+      "locale": "ga-IE",
+      "language_code": "ga",
+      "gender": "male",
+      "friendly_name": "Microsoft Colm Online (Natural) - Irish (Ireland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ga-IE-OrlaNeural",
+      "engine": "edge",
+      "locale": "ga-IE",
+      "language_code": "ga",
+      "gender": "female",
+      "friendly_name": "Microsoft Orla Online (Natural) - Irish (Ireland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "gl-ES-RoiNeural",
+      "engine": "edge",
+      "locale": "gl-ES",
+      "language_code": "gl",
+      "gender": "male",
+      "friendly_name": "Microsoft Roi Online (Natural) - Galician",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "gl-ES-SabelaNeural",
+      "engine": "edge",
+      "locale": "gl-ES",
+      "language_code": "gl",
+      "gender": "female",
+      "friendly_name": "Microsoft Sabela Online (Natural) - Galician",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "gu-IN-DhwaniNeural",
+      "engine": "edge",
+      "locale": "gu-IN",
+      "language_code": "gu",
+      "gender": "female",
+      "friendly_name": "Microsoft Dhwani Online (Natural) - Gujarati (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "gu-IN-NiranjanNeural",
+      "engine": "edge",
+      "locale": "gu-IN",
+      "language_code": "gu",
+      "gender": "male",
+      "friendly_name": "Microsoft Niranjan Online (Natural) - Gujarati (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "he-IL-AvriNeural",
+      "engine": "edge",
+      "locale": "he-IL",
+      "language_code": "he",
+      "gender": "male",
+      "friendly_name": "Microsoft Avri Online (Natural) - Hebrew (Israel)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "שלום, זו דוגמת קול.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "he-IL-HilaNeural",
+      "engine": "edge",
+      "locale": "he-IL",
+      "language_code": "he",
+      "gender": "female",
+      "friendly_name": "Microsoft Hila Online (Natural) - Hebrew (Israel)",
+      "offline": false,
+      "sample": "samples/he-IL-HilaNeural.mp3",
+      "sample_text": "שלום, זו דוגמת קול.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "hi-IN-MadhurNeural",
+      "engine": "edge",
+      "locale": "hi-IN",
+      "language_code": "hi",
+      "gender": "male",
+      "friendly_name": "Microsoft Madhur Online (Natural) - Hindi (India)",
+      "offline": false,
+      "sample": "samples/hi-IN-MadhurNeural.mp3",
+      "sample_text": "नमस्ते, यह आवाज़ का एक नमूना है।",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "hi-IN-SwaraNeural",
+      "engine": "edge",
+      "locale": "hi-IN",
+      "language_code": "hi",
+      "gender": "female",
+      "friendly_name": "Microsoft Swara Online (Natural) - Hindi (India)",
+      "offline": false,
+      "sample": "samples/hi-IN-SwaraNeural.mp3",
+      "sample_text": "नमस्ते, यह आवाज़ का एक नमूना है।",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "hr-HR-GabrijelaNeural",
+      "engine": "edge",
+      "locale": "hr-HR",
+      "language_code": "hr",
+      "gender": "female",
+      "friendly_name": "Microsoft Gabrijela Online (Natural) - Croatian (Croatia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "hr-HR-SreckoNeural",
+      "engine": "edge",
+      "locale": "hr-HR",
+      "language_code": "hr",
+      "gender": "male",
+      "friendly_name": "Microsoft Srecko Online (Natural) - Croatian (Croatia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "hu-HU-NoemiNeural",
+      "engine": "edge",
+      "locale": "hu-HU",
+      "language_code": "hu",
+      "gender": "female",
+      "friendly_name": "Microsoft Noemi Online (Natural) - Hungarian (Hungary)",
+      "offline": false,
+      "sample": "samples/hu-HU-NoemiNeural.mp3",
+      "sample_text": "Hello, ez egy hangminta.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "hu-HU-TamasNeural",
+      "engine": "edge",
+      "locale": "hu-HU",
+      "language_code": "hu",
+      "gender": "male",
+      "friendly_name": "Microsoft Tamas Online (Natural) - Hungarian (Hungary)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hello, ez egy hangminta.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "id-ID-ArdiNeural",
+      "engine": "edge",
+      "locale": "id-ID",
+      "language_code": "id",
+      "gender": "male",
+      "friendly_name": "Microsoft Ardi Online (Natural) - Indonesian (Indonesia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Halo, ini adalah contoh suara.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "id-ID-GadisNeural",
+      "engine": "edge",
+      "locale": "id-ID",
+      "language_code": "id",
+      "gender": "female",
+      "friendly_name": "Microsoft Gadis Online (Natural) - Indonesian (Indonesia)",
+      "offline": false,
+      "sample": "samples/id-ID-GadisNeural.mp3",
+      "sample_text": "Halo, ini adalah contoh suara.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "is-IS-GudrunNeural",
+      "engine": "edge",
+      "locale": "is-IS",
+      "language_code": "is",
+      "gender": "female",
+      "friendly_name": "Microsoft Gudrun Online (Natural) - Icelandic (Iceland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "is-IS-GunnarNeural",
+      "engine": "edge",
+      "locale": "is-IS",
+      "language_code": "is",
+      "gender": "male",
+      "friendly_name": "Microsoft Gunnar Online (Natural) - Icelandic (Iceland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "it-IT-DiegoNeural",
+      "engine": "edge",
+      "locale": "it-IT",
+      "language_code": "it",
+      "gender": "male",
+      "friendly_name": "Microsoft Diego Online (Natural) - Italian (Italy)",
+      "offline": false,
+      "sample": "samples/it-IT-DiegoNeural.mp3",
+      "sample_text": "Ciao, questo è un esempio vocale.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "it-IT-ElsaNeural",
+      "engine": "edge",
+      "locale": "it-IT",
+      "language_code": "it",
+      "gender": "female",
+      "friendly_name": "Microsoft Elsa Online (Natural) - Italian (Italy)",
+      "offline": false,
+      "sample": "samples/it-IT-ElsaNeural.mp3",
+      "sample_text": "Ciao, questo è un esempio vocale.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "it-IT-GiuseppeMultilingualNeural",
+      "engine": "edge",
+      "locale": "it-IT",
+      "language_code": "it",
+      "gender": "male",
+      "friendly_name": "Microsoft GiuseppeMultilingual Online (Natural) - Italian (Italy)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Ciao, questo è un esempio vocale.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "it-IT-IsabellaNeural",
+      "engine": "edge",
+      "locale": "it-IT",
+      "language_code": "it",
+      "gender": "female",
+      "friendly_name": "Microsoft Isabella Online (Natural) - Italian (Italy)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Ciao, questo è un esempio vocale.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "iu-Cans-CA-SiqiniqNeural",
+      "engine": "edge",
+      "locale": "iu-Cans-CA",
+      "language_code": "iu",
+      "gender": "female",
+      "friendly_name": "Microsoft Siqiniq Online (Natural) - Inuktitut (Syllabics, Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "iu-Cans-CA-TaqqiqNeural",
+      "engine": "edge",
+      "locale": "iu-Cans-CA",
+      "language_code": "iu",
+      "gender": "male",
+      "friendly_name": "Microsoft Taqqiq Online (Natural) - Inuktitut (Syllabics, Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "iu-Latn-CA-SiqiniqNeural",
+      "engine": "edge",
+      "locale": "iu-Latn-CA",
+      "language_code": "iu",
+      "gender": "female",
+      "friendly_name": "Microsoft Siqiniq Online (Natural) - Inuktitut (Latin, Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "iu-Latn-CA-TaqqiqNeural",
+      "engine": "edge",
+      "locale": "iu-Latn-CA",
+      "language_code": "iu",
+      "gender": "male",
+      "friendly_name": "Microsoft Taqqiq Online (Natural) - Inuktitut (Latin, Canada)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ja-JP-KeitaNeural",
+      "engine": "edge",
+      "locale": "ja-JP",
+      "language_code": "ja",
+      "gender": "male",
+      "friendly_name": "Microsoft Keita Online (Natural) - Japanese (Japan)",
+      "offline": false,
+      "sample": "samples/ja-JP-KeitaNeural.mp3",
+      "sample_text": "こんにちは、これは音声のサンプルです。",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ja-JP-NanamiNeural",
+      "engine": "edge",
+      "locale": "ja-JP",
+      "language_code": "ja",
+      "gender": "female",
+      "friendly_name": "Microsoft Nanami Online (Natural) - Japanese (Japan)",
+      "offline": false,
+      "sample": "samples/ja-JP-NanamiNeural.mp3",
+      "sample_text": "こんにちは、これは音声のサンプルです。",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "jv-ID-DimasNeural",
+      "engine": "edge",
+      "locale": "jv-ID",
+      "language_code": "jv",
+      "gender": "male",
+      "friendly_name": "Microsoft Dimas Online (Natural) - Javanese (Indonesia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "jv-ID-SitiNeural",
+      "engine": "edge",
+      "locale": "jv-ID",
+      "language_code": "jv",
+      "gender": "female",
+      "friendly_name": "Microsoft Siti Online (Natural) - Javanese (Indonesia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ka-GE-EkaNeural",
+      "engine": "edge",
+      "locale": "ka-GE",
+      "language_code": "ka",
+      "gender": "female",
+      "friendly_name": "Microsoft Eka Online (Natural) - Georgian (Georgia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ka-GE-GiorgiNeural",
+      "engine": "edge",
+      "locale": "ka-GE",
+      "language_code": "ka",
+      "gender": "male",
+      "friendly_name": "Microsoft Giorgi Online (Natural) - Georgian (Georgia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "kk-KZ-AigulNeural",
+      "engine": "edge",
+      "locale": "kk-KZ",
+      "language_code": "kk",
+      "gender": "female",
+      "friendly_name": "Microsoft Aigul Online (Natural) - Kazakh (Kazakhstan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "kk-KZ-DauletNeural",
+      "engine": "edge",
+      "locale": "kk-KZ",
+      "language_code": "kk",
+      "gender": "male",
+      "friendly_name": "Microsoft Daulet Online (Natural) - Kazakh (Kazakhstan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "km-KH-PisethNeural",
+      "engine": "edge",
+      "locale": "km-KH",
+      "language_code": "km",
+      "gender": "male",
+      "friendly_name": "Microsoft Piseth Online (Natural) - Khmer (Cambodia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "km-KH-SreymomNeural",
+      "engine": "edge",
+      "locale": "km-KH",
+      "language_code": "km",
+      "gender": "female",
+      "friendly_name": "Microsoft Sreymom Online (Natural) - Khmer (Cambodia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "kn-IN-GaganNeural",
+      "engine": "edge",
+      "locale": "kn-IN",
+      "language_code": "kn",
+      "gender": "male",
+      "friendly_name": "Microsoft Gagan Online (Natural) - Kannada (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "kn-IN-SapnaNeural",
+      "engine": "edge",
+      "locale": "kn-IN",
+      "language_code": "kn",
+      "gender": "female",
+      "friendly_name": "Microsoft Sapna Online (Natural) - Kannada (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ko-KR-HyunsuMultilingualNeural",
+      "engine": "edge",
+      "locale": "ko-KR",
+      "language_code": "ko",
+      "gender": "male",
+      "friendly_name": "Microsoft HyunsuMultilingual Online (Natural) - Korean (Korea)",
+      "offline": false,
+      "sample": "samples/ko-KR-HyunsuMultilingualNeural.mp3",
+      "sample_text": "안녕하세요. 음성 샘플입니다.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ko-KR-InJoonNeural",
+      "engine": "edge",
+      "locale": "ko-KR",
+      "language_code": "ko",
+      "gender": "male",
+      "friendly_name": "Microsoft InJoon Online (Natural) - Korean (Korea)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "안녕하세요. 음성 샘플입니다.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ko-KR-SunHiNeural",
+      "engine": "edge",
+      "locale": "ko-KR",
+      "language_code": "ko",
+      "gender": "female",
+      "friendly_name": "Microsoft SunHi Online (Natural) - Korean (Korea)",
+      "offline": false,
+      "sample": "samples/ko-KR-SunHiNeural.mp3",
+      "sample_text": "안녕하세요. 음성 샘플입니다.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "lo-LA-ChanthavongNeural",
+      "engine": "edge",
+      "locale": "lo-LA",
+      "language_code": "lo",
+      "gender": "male",
+      "friendly_name": "Microsoft Chanthavong Online (Natural) - Lao (Laos)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "lo-LA-KeomanyNeural",
+      "engine": "edge",
+      "locale": "lo-LA",
+      "language_code": "lo",
+      "gender": "female",
+      "friendly_name": "Microsoft Keomany Online (Natural) - Lao (Laos)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "lt-LT-LeonasNeural",
+      "engine": "edge",
+      "locale": "lt-LT",
+      "language_code": "lt",
+      "gender": "male",
+      "friendly_name": "Microsoft Leonas Online (Natural) - Lithuanian (Lithuania)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "lt-LT-OnaNeural",
+      "engine": "edge",
+      "locale": "lt-LT",
+      "language_code": "lt",
+      "gender": "female",
+      "friendly_name": "Microsoft Ona Online (Natural) - Lithuanian (Lithuania)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "lv-LV-EveritaNeural",
+      "engine": "edge",
+      "locale": "lv-LV",
+      "language_code": "lv",
+      "gender": "female",
+      "friendly_name": "Microsoft Everita Online (Natural) - Latvian (Latvia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "lv-LV-NilsNeural",
+      "engine": "edge",
+      "locale": "lv-LV",
+      "language_code": "lv",
+      "gender": "male",
+      "friendly_name": "Microsoft Nils Online (Natural) - Latvian (Latvia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "mk-MK-AleksandarNeural",
+      "engine": "edge",
+      "locale": "mk-MK",
+      "language_code": "mk",
+      "gender": "male",
+      "friendly_name": "Microsoft Aleksandar Online (Natural) - Macedonian (North Macedonia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "mk-MK-MarijaNeural",
+      "engine": "edge",
+      "locale": "mk-MK",
+      "language_code": "mk",
+      "gender": "female",
+      "friendly_name": "Microsoft Marija Online (Natural) - Macedonian (North Macedonia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ml-IN-MidhunNeural",
+      "engine": "edge",
+      "locale": "ml-IN",
+      "language_code": "ml",
+      "gender": "male",
+      "friendly_name": "Microsoft Midhun Online (Natural) - Malayalam (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ml-IN-SobhanaNeural",
+      "engine": "edge",
+      "locale": "ml-IN",
+      "language_code": "ml",
+      "gender": "female",
+      "friendly_name": "Microsoft Sobhana Online (Natural) - Malayalam (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "mn-MN-BataaNeural",
+      "engine": "edge",
+      "locale": "mn-MN",
+      "language_code": "mn",
+      "gender": "male",
+      "friendly_name": "Microsoft Bataa Online (Natural) - Mongolian (Mongolia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "mn-MN-YesuiNeural",
+      "engine": "edge",
+      "locale": "mn-MN",
+      "language_code": "mn",
+      "gender": "female",
+      "friendly_name": "Microsoft Yesui Online (Natural) - Mongolian (Mongolia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "mr-IN-AarohiNeural",
+      "engine": "edge",
+      "locale": "mr-IN",
+      "language_code": "mr",
+      "gender": "female",
+      "friendly_name": "Microsoft Aarohi Online (Natural) - Marathi (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "mr-IN-ManoharNeural",
+      "engine": "edge",
+      "locale": "mr-IN",
+      "language_code": "mr",
+      "gender": "male",
+      "friendly_name": "Microsoft Manohar Online (Natural) - Marathi (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ms-MY-OsmanNeural",
+      "engine": "edge",
+      "locale": "ms-MY",
+      "language_code": "ms",
+      "gender": "male",
+      "friendly_name": "Microsoft Osman Online (Natural) - Malay (Malaysia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Helo, ini contoh suara.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ms-MY-YasminNeural",
+      "engine": "edge",
+      "locale": "ms-MY",
+      "language_code": "ms",
+      "gender": "female",
+      "friendly_name": "Microsoft Yasmin Online (Natural) - Malay (Malaysia)",
+      "offline": false,
+      "sample": "samples/ms-MY-YasminNeural.mp3",
+      "sample_text": "Helo, ini contoh suara.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "mt-MT-GraceNeural",
+      "engine": "edge",
+      "locale": "mt-MT",
+      "language_code": "mt",
+      "gender": "female",
+      "friendly_name": "Microsoft Grace Online (Natural) - Maltese (Malta)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "mt-MT-JosephNeural",
+      "engine": "edge",
+      "locale": "mt-MT",
+      "language_code": "mt",
+      "gender": "male",
+      "friendly_name": "Microsoft Joseph Online (Natural) - Maltese (Malta)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "my-MM-NilarNeural",
+      "engine": "edge",
+      "locale": "my-MM",
+      "language_code": "my",
+      "gender": "female",
+      "friendly_name": "Microsoft Nilar Online (Natural) - Burmese (Myanmar)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "my-MM-ThihaNeural",
+      "engine": "edge",
+      "locale": "my-MM",
+      "language_code": "my",
+      "gender": "male",
+      "friendly_name": "Microsoft Thiha Online (Natural) - Burmese (Myanmar)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "nb-NO-FinnNeural",
+      "engine": "edge",
+      "locale": "nb-NO",
+      "language_code": "nb",
+      "gender": "male",
+      "friendly_name": "Microsoft Finn Online (Natural) - Norwegian (Bokmål Norway)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hei, dette er en stemmeprøve.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "nb-NO-PernilleNeural",
+      "engine": "edge",
+      "locale": "nb-NO",
+      "language_code": "nb",
+      "gender": "female",
+      "friendly_name": "Microsoft Pernille Online (Natural) - Norwegian (Bokmål, Norway)",
+      "offline": false,
+      "sample": "samples/nb-NO-PernilleNeural.mp3",
+      "sample_text": "Hei, dette er en stemmeprøve.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ne-NP-HemkalaNeural",
+      "engine": "edge",
+      "locale": "ne-NP",
+      "language_code": "ne",
+      "gender": "female",
+      "friendly_name": "Microsoft Hemkala Online (Natural) - Nepali (Nepal)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ne-NP-SagarNeural",
+      "engine": "edge",
+      "locale": "ne-NP",
+      "language_code": "ne",
+      "gender": "male",
+      "friendly_name": "Microsoft Sagar Online (Natural) - Nepali (Nepal)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "nl-BE-ArnaudNeural",
+      "engine": "edge",
+      "locale": "nl-BE",
+      "language_code": "nl",
+      "gender": "male",
+      "friendly_name": "Microsoft Arnaud Online (Natural) - Dutch (Belgium)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "nl-BE-DenaNeural",
+      "engine": "edge",
+      "locale": "nl-BE",
+      "language_code": "nl",
+      "gender": "female",
+      "friendly_name": "Microsoft Dena Online (Natural) - Dutch (Belgium)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "nl-NL-ColetteNeural",
+      "engine": "edge",
+      "locale": "nl-NL",
+      "language_code": "nl",
+      "gender": "female",
+      "friendly_name": "Microsoft Colette Online (Natural) - Dutch (Netherlands)",
+      "offline": false,
+      "sample": "samples/nl-NL-ColetteNeural.mp3",
+      "sample_text": "Hallo, dit is een stemvoorbeeld.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "nl-NL-FennaNeural",
+      "engine": "edge",
+      "locale": "nl-NL",
+      "language_code": "nl",
+      "gender": "female",
+      "friendly_name": "Microsoft Fenna Online (Natural) - Dutch (Netherlands)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hallo, dit is een stemvoorbeeld.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "nl-NL-MaartenNeural",
+      "engine": "edge",
+      "locale": "nl-NL",
+      "language_code": "nl",
+      "gender": "male",
+      "friendly_name": "Microsoft Maarten Online (Natural) - Dutch (Netherlands)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hallo, dit is een stemvoorbeeld.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "pl-PL-MarekNeural",
+      "engine": "edge",
+      "locale": "pl-PL",
+      "language_code": "pl",
+      "gender": "male",
+      "friendly_name": "Microsoft Marek Online (Natural) - Polish (Poland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Cześć, to jest próbka głosu.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "pl-PL-ZofiaNeural",
+      "engine": "edge",
+      "locale": "pl-PL",
+      "language_code": "pl",
+      "gender": "female",
+      "friendly_name": "Microsoft Zofia Online (Natural) - Polish (Poland)",
+      "offline": false,
+      "sample": "samples/pl-PL-ZofiaNeural.mp3",
+      "sample_text": "Cześć, to jest próbka głosu.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ps-AF-GulNawazNeural",
+      "engine": "edge",
+      "locale": "ps-AF",
+      "language_code": "ps",
+      "gender": "male",
+      "friendly_name": "Microsoft GulNawaz Online (Natural) - Pashto (Afghanistan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ps-AF-LatifaNeural",
+      "engine": "edge",
+      "locale": "ps-AF",
+      "language_code": "ps",
+      "gender": "female",
+      "friendly_name": "Microsoft Latifa Online (Natural) - Pashto (Afghanistan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "pt-BR-AntonioNeural",
+      "engine": "edge",
+      "locale": "pt-BR",
+      "language_code": "pt",
+      "gender": "male",
+      "friendly_name": "Microsoft Antonio Online (Natural) - Portuguese (Brazil)",
+      "offline": false,
+      "sample": "samples/pt-BR-AntonioNeural.mp3",
+      "sample_text": "Olá, esta é uma amostra de voz.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "pt-BR-FranciscaNeural",
+      "engine": "edge",
+      "locale": "pt-BR",
+      "language_code": "pt",
+      "gender": "female",
+      "friendly_name": "Microsoft Francisca Online (Natural) - Portuguese (Brazil)",
+      "offline": false,
+      "sample": "samples/pt-BR-FranciscaNeural.mp3",
+      "sample_text": "Olá, esta é uma amostra de voz.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "pt-BR-ThalitaMultilingualNeural",
+      "engine": "edge",
+      "locale": "pt-BR",
+      "language_code": "pt",
+      "gender": "female",
+      "friendly_name": "Microsoft ThalitaMultilingual Online (Natural) - Portuguese (Brazil)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Olá, esta é uma amostra de voz.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "pt-PT-DuarteNeural",
+      "engine": "edge",
+      "locale": "pt-PT",
+      "language_code": "pt",
+      "gender": "male",
+      "friendly_name": "Microsoft Duarte Online (Natural) - Portuguese (Portugal)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Olá, esta é uma amostra de voz.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "pt-PT-RaquelNeural",
+      "engine": "edge",
+      "locale": "pt-PT",
+      "language_code": "pt",
+      "gender": "female",
+      "friendly_name": "Microsoft Raquel Online (Natural) - Portuguese (Portugal)",
+      "offline": false,
+      "sample": "samples/pt-PT-RaquelNeural.mp3",
+      "sample_text": "Olá, esta é uma amostra de voz.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ro-RO-AlinaNeural",
+      "engine": "edge",
+      "locale": "ro-RO",
+      "language_code": "ro",
+      "gender": "female",
+      "friendly_name": "Microsoft Alina Online (Natural) - Romanian (Romania)",
+      "offline": false,
+      "sample": "samples/ro-RO-AlinaNeural.mp3",
+      "sample_text": "Bună, acesta este un eșantion vocal.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ro-RO-EmilNeural",
+      "engine": "edge",
+      "locale": "ro-RO",
+      "language_code": "ro",
+      "gender": "male",
+      "friendly_name": "Microsoft Emil Online (Natural) - Romanian (Romania)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Bună, acesta este un eșantion vocal.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ru-RU-DmitryNeural",
+      "engine": "edge",
+      "locale": "ru-RU",
+      "language_code": "ru",
+      "gender": "male",
+      "friendly_name": "Microsoft Dmitry Online (Natural) - Russian (Russia)",
+      "offline": false,
+      "sample": "samples/ru-RU-DmitryNeural.mp3",
+      "sample_text": "Здравствуйте, это пример голоса.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ru-RU-SvetlanaNeural",
+      "engine": "edge",
+      "locale": "ru-RU",
+      "language_code": "ru",
+      "gender": "female",
+      "friendly_name": "Microsoft Svetlana Online (Natural) - Russian (Russia)",
+      "offline": false,
+      "sample": "samples/ru-RU-SvetlanaNeural.mp3",
+      "sample_text": "Здравствуйте, это пример голоса.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "si-LK-SameeraNeural",
+      "engine": "edge",
+      "locale": "si-LK",
+      "language_code": "si",
+      "gender": "male",
+      "friendly_name": "Microsoft Sameera Online (Natural) - Sinhala (Sri Lanka)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "si-LK-ThiliniNeural",
+      "engine": "edge",
+      "locale": "si-LK",
+      "language_code": "si",
+      "gender": "female",
+      "friendly_name": "Microsoft Thilini Online (Natural) - Sinhala (Sri Lanka)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sk-SK-LukasNeural",
+      "engine": "edge",
+      "locale": "sk-SK",
+      "language_code": "sk",
+      "gender": "male",
+      "friendly_name": "Microsoft Lukas Online (Natural) - Slovak (Slovakia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sk-SK-ViktoriaNeural",
+      "engine": "edge",
+      "locale": "sk-SK",
+      "language_code": "sk",
+      "gender": "female",
+      "friendly_name": "Microsoft Viktoria Online (Natural) - Slovak (Slovakia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sl-SI-PetraNeural",
+      "engine": "edge",
+      "locale": "sl-SI",
+      "language_code": "sl",
+      "gender": "female",
+      "friendly_name": "Microsoft Petra Online (Natural) - Slovenian (Slovenia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sl-SI-RokNeural",
+      "engine": "edge",
+      "locale": "sl-SI",
+      "language_code": "sl",
+      "gender": "male",
+      "friendly_name": "Microsoft Rok Online (Natural) - Slovenian (Slovenia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "so-SO-MuuseNeural",
+      "engine": "edge",
+      "locale": "so-SO",
+      "language_code": "so",
+      "gender": "male",
+      "friendly_name": "Microsoft Muuse Online (Natural) - Somali (Somalia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "so-SO-UbaxNeural",
+      "engine": "edge",
+      "locale": "so-SO",
+      "language_code": "so",
+      "gender": "female",
+      "friendly_name": "Microsoft Ubax Online (Natural) - Somali (Somalia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sq-AL-AnilaNeural",
+      "engine": "edge",
+      "locale": "sq-AL",
+      "language_code": "sq",
+      "gender": "female",
+      "friendly_name": "Microsoft Anila Online (Natural) - Albanian (Albania)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sq-AL-IlirNeural",
+      "engine": "edge",
+      "locale": "sq-AL",
+      "language_code": "sq",
+      "gender": "male",
+      "friendly_name": "Microsoft Ilir Online (Natural) - Albanian (Albania)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sr-RS-NicholasNeural",
+      "engine": "edge",
+      "locale": "sr-RS",
+      "language_code": "sr",
+      "gender": "male",
+      "friendly_name": "Microsoft Nicholas Online (Natural) - Serbian (Serbia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sr-RS-SophieNeural",
+      "engine": "edge",
+      "locale": "sr-RS",
+      "language_code": "sr",
+      "gender": "female",
+      "friendly_name": "Microsoft Sophie Online (Natural) - Serbian (Serbia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "su-ID-JajangNeural",
+      "engine": "edge",
+      "locale": "su-ID",
+      "language_code": "su",
+      "gender": "male",
+      "friendly_name": "Microsoft Jajang Online (Natural) - Sundanese (Indonesia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "su-ID-TutiNeural",
+      "engine": "edge",
+      "locale": "su-ID",
+      "language_code": "su",
+      "gender": "female",
+      "friendly_name": "Microsoft Tuti Online (Natural) - Sundanese (Indonesia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sv-SE-MattiasNeural",
+      "engine": "edge",
+      "locale": "sv-SE",
+      "language_code": "sv",
+      "gender": "male",
+      "friendly_name": "Microsoft Mattias Online (Natural) - Swedish (Sweden)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Hej, detta är ett röstprov.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sv-SE-SofieNeural",
+      "engine": "edge",
+      "locale": "sv-SE",
+      "language_code": "sv",
+      "gender": "female",
+      "friendly_name": "Microsoft Sofie Online (Natural) - Swedish (Sweden)",
+      "offline": false,
+      "sample": "samples/sv-SE-SofieNeural.mp3",
+      "sample_text": "Hej, detta är ett röstprov.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sw-KE-RafikiNeural",
+      "engine": "edge",
+      "locale": "sw-KE",
+      "language_code": "sw",
+      "gender": "male",
+      "friendly_name": "Microsoft Rafiki Online (Natural) - Swahili (Kenya)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Habari, hii ni sampuli ya sauti.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sw-KE-ZuriNeural",
+      "engine": "edge",
+      "locale": "sw-KE",
+      "language_code": "sw",
+      "gender": "female",
+      "friendly_name": "Microsoft Zuri Online (Natural) - Swahili (Kenya)",
+      "offline": false,
+      "sample": "samples/sw-KE-ZuriNeural.mp3",
+      "sample_text": "Habari, hii ni sampuli ya sauti.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sw-TZ-DaudiNeural",
+      "engine": "edge",
+      "locale": "sw-TZ",
+      "language_code": "sw",
+      "gender": "male",
+      "friendly_name": "Microsoft Daudi Online (Natural) - Swahili (Tanzania)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "sw-TZ-RehemaNeural",
+      "engine": "edge",
+      "locale": "sw-TZ",
+      "language_code": "sw",
+      "gender": "female",
+      "friendly_name": "Microsoft Rehema Online (Natural) - Swahili (Tanzania)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ta-IN-PallaviNeural",
+      "engine": "edge",
+      "locale": "ta-IN",
+      "language_code": "ta",
+      "gender": "female",
+      "friendly_name": "Microsoft Pallavi Online (Natural) - Tamil (India)",
+      "offline": false,
+      "sample": "samples/ta-IN-PallaviNeural.mp3",
+      "sample_text": "வணக்கம், இது ஒரு குரல் மாதிரி.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ta-IN-ValluvarNeural",
+      "engine": "edge",
+      "locale": "ta-IN",
+      "language_code": "ta",
+      "gender": "male",
+      "friendly_name": "Microsoft Valluvar Online (Natural) - Tamil (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "வணக்கம், இது ஒரு குரல் மாதிரி.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ta-LK-KumarNeural",
+      "engine": "edge",
+      "locale": "ta-LK",
+      "language_code": "ta",
+      "gender": "male",
+      "friendly_name": "Microsoft Kumar Online (Natural) - Tamil (Sri Lanka)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ta-LK-SaranyaNeural",
+      "engine": "edge",
+      "locale": "ta-LK",
+      "language_code": "ta",
+      "gender": "female",
+      "friendly_name": "Microsoft Saranya Online (Natural) - Tamil (Sri Lanka)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ta-MY-KaniNeural",
+      "engine": "edge",
+      "locale": "ta-MY",
+      "language_code": "ta",
+      "gender": "female",
+      "friendly_name": "Microsoft Kani Online (Natural) - Tamil (Malaysia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ta-MY-SuryaNeural",
+      "engine": "edge",
+      "locale": "ta-MY",
+      "language_code": "ta",
+      "gender": "male",
+      "friendly_name": "Microsoft Surya Online (Natural) - Tamil (Malaysia)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ta-SG-AnbuNeural",
+      "engine": "edge",
+      "locale": "ta-SG",
+      "language_code": "ta",
+      "gender": "male",
+      "friendly_name": "Microsoft Anbu Online (Natural) - Tamil (Singapore)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ta-SG-VenbaNeural",
+      "engine": "edge",
+      "locale": "ta-SG",
+      "language_code": "ta",
+      "gender": "female",
+      "friendly_name": "Microsoft Venba Online (Natural) - Tamil (Singapore)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "te-IN-MohanNeural",
+      "engine": "edge",
+      "locale": "te-IN",
+      "language_code": "te",
+      "gender": "male",
+      "friendly_name": "Microsoft Mohan Online (Natural) - Telugu (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "నమస్కారం, ఇది ఒక వాయిస్ నమూనా.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "te-IN-ShrutiNeural",
+      "engine": "edge",
+      "locale": "te-IN",
+      "language_code": "te",
+      "gender": "female",
+      "friendly_name": "Microsoft Shruti Online (Natural) - Telugu (India)",
+      "offline": false,
+      "sample": "samples/te-IN-ShrutiNeural.mp3",
+      "sample_text": "నమస్కారం, ఇది ఒక వాయిస్ నమూనా.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "th-TH-NiwatNeural",
+      "engine": "edge",
+      "locale": "th-TH",
+      "language_code": "th",
+      "gender": "male",
+      "friendly_name": "Microsoft Niwat Online (Natural) - Thai (Thailand)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "สวัสดี นี่คือตัวอย่างเสียง",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "th-TH-PremwadeeNeural",
+      "engine": "edge",
+      "locale": "th-TH",
+      "language_code": "th",
+      "gender": "female",
+      "friendly_name": "Microsoft Premwadee Online (Natural) - Thai (Thailand)",
+      "offline": false,
+      "sample": "samples/th-TH-PremwadeeNeural.mp3",
+      "sample_text": "สวัสดี นี่คือตัวอย่างเสียง",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "tr-TR-AhmetNeural",
+      "engine": "edge",
+      "locale": "tr-TR",
+      "language_code": "tr",
+      "gender": "male",
+      "friendly_name": "Microsoft Ahmet Online (Natural) - Turkish (Türkiye)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Merhaba, bu bir ses örneği.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "tr-TR-EmelNeural",
+      "engine": "edge",
+      "locale": "tr-TR",
+      "language_code": "tr",
+      "gender": "female",
+      "friendly_name": "Microsoft Emel Online (Natural) - Turkish (Turkey)",
+      "offline": false,
+      "sample": "samples/tr-TR-EmelNeural.mp3",
+      "sample_text": "Merhaba, bu bir ses örneği.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "uk-UA-OstapNeural",
+      "engine": "edge",
+      "locale": "uk-UA",
+      "language_code": "uk",
+      "gender": "male",
+      "friendly_name": "Microsoft Ostap Online (Natural) - Ukrainian (Ukraine)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Вітаю, це приклад голосу.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "uk-UA-PolinaNeural",
+      "engine": "edge",
+      "locale": "uk-UA",
+      "language_code": "uk",
+      "gender": "female",
+      "friendly_name": "Microsoft Polina Online (Natural) - Ukrainian (Ukraine)",
+      "offline": false,
+      "sample": "samples/uk-UA-PolinaNeural.mp3",
+      "sample_text": "Вітаю, це приклад голосу.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ur-IN-GulNeural",
+      "engine": "edge",
+      "locale": "ur-IN",
+      "language_code": "ur",
+      "gender": "female",
+      "friendly_name": "Microsoft Gul Online (Natural) - Urdu (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ur-IN-SalmanNeural",
+      "engine": "edge",
+      "locale": "ur-IN",
+      "language_code": "ur",
+      "gender": "male",
+      "friendly_name": "Microsoft Salman Online (Natural) - Urdu (India)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ur-PK-AsadNeural",
+      "engine": "edge",
+      "locale": "ur-PK",
+      "language_code": "ur",
+      "gender": "male",
+      "friendly_name": "Microsoft Asad Online (Natural) - Urdu (Pakistan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "سلام، یہ آواز کا نمونہ ہے۔",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "ur-PK-UzmaNeural",
+      "engine": "edge",
+      "locale": "ur-PK",
+      "language_code": "ur",
+      "gender": "female",
+      "friendly_name": "Microsoft Uzma Online (Natural) - Urdu (Pakistan)",
+      "offline": false,
+      "sample": "samples/ur-PK-UzmaNeural.mp3",
+      "sample_text": "سلام، یہ آواز کا نمونہ ہے۔",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "uz-UZ-MadinaNeural",
+      "engine": "edge",
+      "locale": "uz-UZ",
+      "language_code": "uz",
+      "gender": "female",
+      "friendly_name": "Microsoft Madina Online (Natural) - Uzbek (Uzbekistan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "uz-UZ-SardorNeural",
+      "engine": "edge",
+      "locale": "uz-UZ",
+      "language_code": "uz",
+      "gender": "male",
+      "friendly_name": "Microsoft Sardor Online (Natural) - Uzbek (Uzbekistan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "vi-VN-HoaiMyNeural",
+      "engine": "edge",
+      "locale": "vi-VN",
+      "language_code": "vi",
+      "gender": "female",
+      "friendly_name": "Microsoft HoaiMy Online (Natural) - Vietnamese (Vietnam)",
+      "offline": false,
+      "sample": "samples/vi-VN-HoaiMyNeural.mp3",
+      "sample_text": "Xin chào, đây là một mẫu giọng nói.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "vi-VN-NamMinhNeural",
+      "engine": "edge",
+      "locale": "vi-VN",
+      "language_code": "vi",
+      "gender": "male",
+      "friendly_name": "Microsoft NamMinh Online (Natural) - Vietnamese (Vietnam)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "Xin chào, đây là một mẫu giọng nói.",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "zh-CN-XiaoxiaoNeural",
+      "engine": "edge",
+      "locale": "zh-CN",
+      "language_code": "zh",
+      "gender": "female",
+      "friendly_name": "Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland)",
+      "offline": false,
+      "sample": "samples/zh-CN-XiaoxiaoNeural.mp3",
+      "sample_text": "你好，这是一段语音试听。",
+      "voice_tag": {
+        "ContentCategories": [
+          "News",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Warm"
+        ]
+      }
+    },
+    {
+      "id": "zh-CN-XiaoyiNeural",
+      "engine": "edge",
+      "locale": "zh-CN",
+      "language_code": "zh",
+      "gender": "female",
+      "friendly_name": "Microsoft Xiaoyi Online (Natural) - Chinese (Mainland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "你好，这是一段语音试听。",
+      "voice_tag": {
+        "ContentCategories": [
+          "Cartoon",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Lively"
+        ]
+      }
+    },
+    {
+      "id": "zh-CN-YunjianNeural",
+      "engine": "edge",
+      "locale": "zh-CN",
+      "language_code": "zh",
+      "gender": "male",
+      "friendly_name": "Microsoft Yunjian Online (Natural) - Chinese (Mainland)",
+      "offline": false,
+      "sample": "samples/zh-CN-YunjianNeural.mp3",
+      "sample_text": "你好，这是一段语音试听。",
+      "voice_tag": {
+        "ContentCategories": [
+          "Sports",
+          " Novel"
+        ],
+        "VoicePersonalities": [
+          "Passion"
+        ]
+      }
+    },
+    {
+      "id": "zh-CN-YunxiNeural",
+      "engine": "edge",
+      "locale": "zh-CN",
+      "language_code": "zh",
+      "gender": "male",
+      "friendly_name": "Microsoft Yunxi Online (Natural) - Chinese (Mainland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "你好，这是一段语音试听。",
+      "voice_tag": {
+        "ContentCategories": [
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Lively",
+          "Sunshine"
+        ]
+      }
+    },
+    {
+      "id": "zh-CN-YunxiaNeural",
+      "engine": "edge",
+      "locale": "zh-CN",
+      "language_code": "zh",
+      "gender": "male",
+      "friendly_name": "Microsoft Yunxia Online (Natural) - Chinese (Mainland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "你好，这是一段语音试听。",
+      "voice_tag": {
+        "ContentCategories": [
+          "Cartoon",
+          "Novel"
+        ],
+        "VoicePersonalities": [
+          "Cute"
+        ]
+      }
+    },
+    {
+      "id": "zh-CN-YunyangNeural",
+      "engine": "edge",
+      "locale": "zh-CN",
+      "language_code": "zh",
+      "gender": "male",
+      "friendly_name": "Microsoft Yunyang Online (Natural) - Chinese (Mainland)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "你好，这是一段语音试听。",
+      "voice_tag": {
+        "ContentCategories": [
+          "News"
+        ],
+        "VoicePersonalities": [
+          "Professional",
+          "Reliable"
+        ]
+      }
+    },
+    {
+      "id": "zh-CN-liaoning-XiaobeiNeural",
+      "engine": "edge",
+      "locale": "zh-CN-liaoning",
+      "language_code": "zh",
+      "gender": "female",
+      "friendly_name": "Microsoft Xiaobei Online (Natural) - Chinese (Northeastern Mandarin)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "Dialect"
+        ],
+        "VoicePersonalities": [
+          "Humorous"
+        ]
+      }
+    },
+    {
+      "id": "zh-CN-shaanxi-XiaoniNeural",
+      "engine": "edge",
+      "locale": "zh-CN-shaanxi",
+      "language_code": "zh",
+      "gender": "female",
+      "friendly_name": "Microsoft Xiaoni Online (Natural) - Chinese (Zhongyuan Mandarin Shaanxi)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "Dialect"
+        ],
+        "VoicePersonalities": [
+          "Bright"
+        ]
+      }
+    },
+    {
+      "id": "zh-HK-HiuGaaiNeural",
+      "engine": "edge",
+      "locale": "zh-HK",
+      "language_code": "zh",
+      "gender": "female",
+      "friendly_name": "Microsoft HiuGaai Online (Natural) - Chinese (Cantonese Traditional)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "zh-HK-HiuMaanNeural",
+      "engine": "edge",
+      "locale": "zh-HK",
+      "language_code": "zh",
+      "gender": "female",
+      "friendly_name": "Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong SAR)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "zh-HK-WanLungNeural",
+      "engine": "edge",
+      "locale": "zh-HK",
+      "language_code": "zh",
+      "gender": "male",
+      "friendly_name": "Microsoft WanLung Online (Natural) - Chinese (Hong Kong SAR)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "zh-TW-HsiaoChenNeural",
+      "engine": "edge",
+      "locale": "zh-TW",
+      "language_code": "zh",
+      "gender": "female",
+      "friendly_name": "Microsoft HsiaoChen Online (Natural) - Chinese (Taiwan)",
+      "offline": false,
+      "sample": "samples/zh-TW-HsiaoChenNeural.mp3",
+      "sample_text": "你好，這是一段語音試聽。",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "zh-TW-HsiaoYuNeural",
+      "engine": "edge",
+      "locale": "zh-TW",
+      "language_code": "zh",
+      "gender": "female",
+      "friendly_name": "Microsoft HsiaoYu Online (Natural) - Chinese (Taiwanese Mandarin)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "你好，這是一段語音試聽。",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "zh-TW-YunJheNeural",
+      "engine": "edge",
+      "locale": "zh-TW",
+      "language_code": "zh",
+      "gender": "male",
+      "friendly_name": "Microsoft YunJhe Online (Natural) - Chinese (Taiwan)",
+      "offline": false,
+      "sample": null,
+      "sample_text": "你好，這是一段語音試聽。",
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "zu-ZA-ThandoNeural",
+      "engine": "edge",
+      "locale": "zu-ZA",
+      "language_code": "zu",
+      "gender": "female",
+      "friendly_name": "Microsoft Thando Online (Natural) - Zulu (South Africa)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    },
+    {
+      "id": "zu-ZA-ThembaNeural",
+      "engine": "edge",
+      "locale": "zu-ZA",
+      "language_code": "zu",
+      "gender": "male",
+      "friendly_name": "Microsoft Themba Online (Natural) - Zulu (South Africa)",
+      "offline": false,
+      "sample": null,
+      "sample_text": null,
+      "voice_tag": {
+        "ContentCategories": [
+          "General"
+        ],
+        "VoicePersonalities": [
+          "Friendly",
+          "Positive"
+        ]
+      }
+    }
+  ]
+}

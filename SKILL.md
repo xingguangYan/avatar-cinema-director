@@ -1,9 +1,9 @@
 ---
 name: avatar-cinema-director
-description: Direct cinematic single- or two-person talking videos from user-supplied character photos, background photos, and dialogue, with lip sync, background-first compositing, captions, and optional 16:9 and 9:16 renders.
+description: Direct cinematic single- or two-person talking videos from user-supplied character photos, background photos, and dialogue, using a multilingual offline/online voice library, background-first compositing, selectable captions and audio levels, CPU/GPU controls, and optional 16:9 and 9:16 renders.
 metadata:
   short-description: Cinematic single- and two-person talking video direction
-  version: 0.2.0
+  version: 0.3.0
 ---
 
 # Avatar Cinema Director
@@ -22,7 +22,8 @@ Do not begin generation until the user has supplied:
 - At least one background photo. Prefer a dedicated 16:9 and 9:16 image when
   both aspects are requested.
 - Dialogue text with a speaker assigned to every line.
-- A Kokoro voice for every character, or explicit approval for default voices.
+- A Kokoro or Edge voice for every character, or explicit approval for default
+  voices.
 
 Never silently substitute stock people, previous characters, or an unrelated
 background. If a required asset is missing, ask for it before running the
@@ -41,6 +42,7 @@ Read the route-specific checklist before preparing a project:
 - [Single presenter](references/single-speaker.md)
 - [Two-person dialogue](references/two-speaker.md)
 - [Input and manifest contract](references/input-contract.md)
+- [Voices, backgrounds, captions, and compute](references/voices-backgrounds-compute.md)
 
 ## Composition Invariant
 
@@ -71,6 +73,11 @@ uncropped or differently proportioned background.
 
 Use relative paths inside `project.json`; they resolve from the project
 directory. Character order controls left/right and top/bottom placement.
+
+The installed skill includes 54 offline Kokoro voices, a 322-voice Edge catalog,
+and eight paired background scenes. Use those assets unless the user supplies
+their own. Preserve the user's requested voice language, caption size, audio
+levels, and CPU/GPU choice in the manifest.
 
 ## Run
 
