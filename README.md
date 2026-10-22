@@ -2,7 +2,6 @@
 
 `avatar-cinema-director` is a Codex skill for producing a finished talking-head
 or dialogue video from still photos.
-# Avatar Cinema Director
 
 ## 📌 Overview
 
