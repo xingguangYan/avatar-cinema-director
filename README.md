@@ -2,7 +2,38 @@
 
 `avatar-cinema-director` is a Codex skill for producing a finished talking-head
 or dialogue video from still photos.
+# Avatar Cinema Director
 
+## 📌 Overview
+
+`avatar-cinema-director` is a **director-style video synthesis skill for Codex** with a deliberately narrow scope: **generate single-speaker or two-person dialogue videos from static photos**, delivered in both 16:9 and 9:16 aspect ratios. Its core design principle is a single ordering constraint that runs through the entire pipeline: **crop the background to the final frame first, then place the people into it**. Background cover-crop, rembg matting, alpha edge cleanup, contact shadows, color matching, subtitle burn-in, and FFmpeg encoding each land as independent, inspectable artifacts that can be checked and re-run on their own.
+
+It does not generate source material, train models, or offer one-click output. What it does is closer to an **auditable render orchestrator**: Kokoro (54 offline voices) and Edge TTS (322 online neural voices across 75 locales) serve as a dual-engine voiceover layer, Wav2Lip handles lip sync, rembg's `u2net_human_seg` provides the matting base, and FFmpeg performs final compositing and validation. Every stage has an explicit input contract and tunable parameters: background crop focus is controlled with normalized coordinates, shadow opacity, blur radius, and edge feather each have recommended ranges, and subtitle size and margin are configurable per aspect ratio.
+
+Its boundaries are just as clear. **Recommended setup** is an NVIDIA GPU with at least 6 GB VRAM, CUDA 11.8+, 16 GB RAM, and 20 GB free disk; the reference test machine is an RTX 5070 Laptop with 8 GB, where a three-minute two-person dialogue with dual-ratio output takes roughly 10–25 minutes. Running Wav2Lip on **pure CPU is not recommended** — technically possible, but a three-minute two-person project may take hours and is more likely to trigger thermal throttling. It is also not for people who expect "upload a photo and the avatar performs on its own," not for scenes requiring natural head pose and body motion across minute-long videos, and not for commercial delivery that ignores portrait consent and upstream license constraints — Wav2Lip's open-source release is intended for personal and research use, and commercial use requires reviewing its upstream license.
+
+The project released **0.3.0 on October 22, 2026**, with same-day updates including an expanded voice library, background packs, subtitle sizing controls, and CPU/GPU selection. It is an early-stage tool grown out of real production needs rather than a framework written first and looking for a use case. Its value is not "yet another AI avatar" but that it writes the **"crop the background first, then place the people"** engineering discipline — the step most easily skipped — into the execution order of every stage.
+
+---
+
+## 📛 Tech Stack Badges
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white)
+![Codex Skill](https://img.shields.io/badge/Codex-Skill-000000?style=flat-square)
+![Wav2Lip](https://img.shields.io/badge/Wav2Lip-Lip_Sync-FF6B35?style=flat-square)
+![Kokoro](https://img.shields.io/badge/Kokoro-TTS-6B4FBB?style=flat-square)
+![Edge TTS](https://img.shields.io/badge/Edge--TTS-322_Voices-0078D4?style=flat-square&logo=microsoftedge&logoColor=white)
+![rembg](https://img.shields.io/badge/rembg-U2Net-00A67E?style=flat-square)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-H.264%2FAAC-007808?style=flat-square&logo=ffmpeg&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.7.0-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![ONNX Runtime](https://img.shields.io/badge/ONNX_Runtime-1.x-005CED?style=flat-square)
+![CUDA](https://img.shields.io/badge/CUDA-11.8%2B-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D6?style=flat-square&logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Supported-FCC624?style=flat-square&logo=linux&logoColor=black)
+![macOS](https://img.shields.io/badge/macOS-Supported-000000?style=flat-square&logo=apple&logoColor=white)
+![License](https://img.shields.io/badge/License-See_Licensing-red?style=flat-square)
+![Version](https://img.shields.io/badge/Version-0.3.0-blue?style=flat-square)
+![Output](https://img.shields.io/badge/Output-1080p%20%7C%2030fps-black?style=flat-square)
 It supports:
 
 - One presenter or two alternating speakers.
