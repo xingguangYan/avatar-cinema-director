@@ -774,6 +774,16 @@ def ass_time(seconds: float) -> str:
     return f"{hours}:{minutes:02d}:{secs:02d}.{centiseconds:02d}"
 
 
+def _escape_ass(value: str) -> str:
+    # Escape literal backslashes and braces in ASS caption text.
+    # Applied before the \\N join, so line breaks are never re-escaped.
+    return (
+        value.replace(chr(92), chr(92) + chr(92))
+        .replace("{", chr(92) + chr(123))
+        .replace("}", chr(92) + chr(125))
+    )
+
+
 def wrap_caption(text: str, limit: int) -> str:
     cjk_count = len(re.findall(r"[\u4e00-\u9fff]", text))
     if cjk_count >= 4:
@@ -799,7 +809,7 @@ def wrap_caption(text: str, limit: int) -> str:
                     current = ""
         if current.strip():
             lines.append(current.strip())
-        return r"\N".join(line for line in lines if line)
+        return r"\N".join(_escape_ass(line) for line in lines if line)
 
     words = text.split()
     lines = []
@@ -813,7 +823,7 @@ def wrap_caption(text: str, limit: int) -> str:
             current = candidate
     if current:
         lines.append(current)
-    return r"\N".join(lines)
+    return r"\N".join(_escape_ass(line) for line in lines)
 
 
 def build_captions(
