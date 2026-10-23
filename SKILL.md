@@ -55,9 +55,13 @@ The required order is:
    explicit focus point.
 2. Create a transparent character panel and a refined alpha mask.
 3. Create a soft contact shadow from the bottom of the character mask.
-4. Overlay the shadow, then the color-matched character, over the cropped
-   background.
-5. Add captions, subtle sway, vignette, fades, and audio.
+4. Overlay the shadow, then the character, over the cropped background.
+   By default the cutout is composited with **no color grading** (identity
+   `eq`) so it keeps the original photo's brightness and saturation. Set
+   `options.character_color_adjustments.<id>` to non-identity values to opt
+   into grading for a specific character.
+5. Add captions, subtle sway, fades, and audio. Vignette is off by default;
+   enable it per project if desired.
 
 This ordering is what prevents characters from looking pasted onto an
 uncropped or differently proportioned background.

@@ -904,10 +904,20 @@ def person_chain(
     saturation: float,
     brightness: float,
 ) -> str:
-    return (
-        f"[{video_index}:v]format=rgba,"
+    # Default: identity (no color grading). Only grade when the project
+    # explicitly sets a non-identity value in options.character_color_adjustments.
+    identity = (
+        abs(contrast - 1.0) < 1e-3
+        and abs(saturation - 1.0) < 1e-3
+        and abs(brightness) < 1e-3
+    )
+    color_stage = "" if identity else (
         f"eq=contrast={contrast:.3f}:saturation={saturation:.3f}:"
-        f"brightness={brightness:.3f}[rv{index}];"
+        f"brightness={brightness:.3f},"
+    )
+    # When color_stage is empty (identity), no trailing comma after format.
+    base_no_comma = f"[{video_index}:v]format=rgba"
+    rest = (
         f"[{mask_index}:v]format=gray,"
         "curves=all='0/0 0.04/0 0.08/1 1/1',"
         f"gblur=sigma={max(0.2, edge_feather):.2f}[rm{index}];"
@@ -916,6 +926,9 @@ def person_chain(
         f"[{shadow_index}:v]format=rgba,"
         f"scale={width}:{height}:flags=lanczos[rsh{index}];"
     )
+    if color_stage:
+        return f"{base_no_comma},{color_stage}[rv{index}];" + rest
+    return f"{base_no_comma}[rv{index}];" + rest
 
 
 def aspect_layout(project: dict[str, Any], aspect: str) -> tuple[int, int, list[tuple[int, int, int, int]]]:
@@ -977,9 +990,11 @@ def build_filter_graph(
             panel_w,
             panel_h,
             edge_feather,
-            float(adjustment.get("contrast", 1.012)),
-            float(adjustment.get("saturation", 0.98)),
-            float(adjustment.get("brightness", -0.006)),
+            # Identity by default: no color grading on the cutout.
+            # Only grade if options.character_color_adjustments explicitly sets values.
+            float(adjustment.get("contrast", 1.0)),
+            float(adjustment.get("saturation", 1.0)),
+            float(adjustment.get("brightness", 0.0)),
         )
 
     current = "bg"
